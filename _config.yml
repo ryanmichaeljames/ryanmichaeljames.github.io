@@ -35,6 +35,8 @@ permalink: pretty #/:categories/:year/:month/:day/:title/
 
 timezone: Pacific/Auckland
 
+google_analytics: UA-146448575-1
+
 # Build settings
 plugins:
   - jekyll-feed
