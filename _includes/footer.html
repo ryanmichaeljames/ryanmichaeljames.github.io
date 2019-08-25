@@ -7,18 +7,23 @@
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
-        <ul class="contact-list">
+        {% capture github_userid%}{{site.github_userid}}{%endcapture%}
+        <a href="https://github.com/{{ site.github_username| cgi_escape | escape }}">
+          <img src="https://avatars0.githubusercontent.com/u/{{ github_userid | cgi_escape | escape }}?v=4"
+            class="avatar">
+        </a>
+        <!-- <ul class="contact-list">
           <li class="p-name">
             {%- if site.author -%}
-              {{ site.author | escape }}
+            {{ site.author | escape }}
             {%- else -%}
-              {{ site.title | escape }}
+            {{ site.title | escape }}
             {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-        </ul>
+          </li>
+          {%- if site.email -%}
+          <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          {%- endif -%}
+        </ul> -->
       </div>
 
       <div class="footer-col footer-col-2">
