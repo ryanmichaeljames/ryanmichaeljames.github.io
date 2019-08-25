@@ -28,6 +28,8 @@ url: "https://ryanjames.dev" # the base hostname & protocol for your site, e.g. 
 twitter_username: WhinyRyanie
 github_username:  ryanmichaeljames
 
+permalink: pretty #/:categories/:year/:month/:day/:title/
+
 # Build settings
 plugins:
   - jekyll-feed
