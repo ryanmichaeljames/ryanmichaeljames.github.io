@@ -33,6 +33,8 @@ linkedin_username: ryanmj
 
 permalink: pretty #/:categories/:year/:month/:day/:title/
 
+timezone: Pacific/Auckland
+
 # Build settings
 plugins:
   - jekyll-feed
