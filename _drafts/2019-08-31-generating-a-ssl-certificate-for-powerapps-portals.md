@@ -2,7 +2,8 @@
 layout: post
 title: "Generating a SSL certificate for PowerApps Portals"
 date: 2019-08-25 00:00:00 +1200
-categories: 
+categories: [blog]
+tags: [powerapps portals, dynamics portals, ssl certificate]
 ---
 ![PowerApps](/assets/images/2019-08-31-generating-a-ssl-certificate-for-powerapps-portals/powerapps.png)
 
