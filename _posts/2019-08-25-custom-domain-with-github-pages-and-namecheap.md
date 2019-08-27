@@ -2,8 +2,11 @@
 layout: post
 title: "Custom domain with GitHub Pages and Namecheap"
 date: 2019-08-25 00:00:00 +1200
-categories: 
+categories: [blog]
+tags: [github pages, custom domain, namecheap]
 ---
+![Banner Image](/assets/images/2019-08-25-custom-domain-with-github-pages-and-namecheap/banner.png)
+
 So you've setup you own personal [GitHub Pages](https://pages.github.com) site and bought a custom domain from [Namecheap](https://www.namecheap.com), now what? In this simple guide I'll show you how to configure your GitHub Pages site to use your new custom domain in less than 5 minutes.
 
 ## Namecheap
