@@ -1,17 +1,19 @@
 ---
 layout: post
 title: "Generating a SSL certificate for PowerApps Portals"
-date: 2019-08-25 00:00:00 +1200
+date: 2019-08-27 00:00:00 +1200
 categories: [blog]
 tags: [powerapps portals, dynamics portals, ssl certificate]
 ---
-![PowerApps](/assets/images/2019-08-31-generating-a-ssl-certificate-for-powerapps-portals/powerapps.png)
+![PowerApps](/assets/images/2019-08-31-generating-a-ssl-certificate-for-powerapps-portals/banner.png)
 
-By default, your PowerApps portal is already using Azure's wildcard certificate that's used on all Azure sites. But if you want to use a custom domain on your portal site you will need a new SSL certificate for that domain.
+By default, your PowerApps portal is already using Azure's wildcard certificate that's used on all Azure sites. But if you want to use a custom domain on your Portals site you will need a new SSL certificate for that domain.
 
 In this guide I'll show you how to generate a CSR (Certificate Signing Request), export a PFX (Personal File Exchange) file and configure PowerApps to use your new SSL certificate.
 
-In order to generate a SSL certificate your certificate authority is going to need you to generate a CSR (Certificate Signing Request). There a a number of ways to generate a CSR file, but in this guide we are going to use IIS becasue, quite frankly, it's the simplist.
+In order to generate a SSL certificate your certificate authority is going to need you to create a CSR (Certificate Signing Request). There are a number of ways to generate a CSR file, but in this guide we are going to use IIS becasue, quite frankly, it's the simplist.
+
+> This guide also applies to Dynamics 365 Portals
 
 ## Install IIS
 If you don't have IIS installed follow these steps, otherwise skip this section.
@@ -44,7 +46,7 @@ You should now have a CSR that you can submit to your certificate authority. You
 
 ## Complete the Certificate Request
 
-Once your certificate authority has provided you with your new certificate, you will need to complete the request and export a PFX certificate file ready to be uploaded to the PowerApps Portal admin center.
+Once your certificate authority has provided you with your new certificate, you will need to complete the request and export a PFX certificate file to be uploaded to the PowerApps Portal admin center.
 
 1. Open IIS and double click **Server Certificates**.
 ![Screenshot of the IIS Server Certificates link](/assets/images/2019-08-31-generating-a-ssl-certificate-for-powerapps-portals/iis-server-certificates.png "IIS Server Certificates")
@@ -57,6 +59,7 @@ Once your certificate authority has provided you with your new certificate, you 
 ![Screenshot of the server certificates](/assets/images/2019-08-31-generating-a-ssl-certificate-for-powerapps-portals/iis-certificate-list.png "Server Certificates")
 5. Specify a location where you want the `.pfx` file to be exported to and give the certificate a strong password. Click **OK**.\
 ![Screenshot of the certificate export](/assets/images/2019-08-31-generating-a-ssl-certificate-for-powerapps-portals/iis-certificate-export.png "Export Certificate")
+> Remember this password. You will need it when uploading your certificate to the PowerApps Portals admin center.
 
 
 ## Upload the certificate to PowerApps Portal admin center
