@@ -38,6 +38,9 @@ timezone: Pacific/Auckland
 google_analytics: UA-146448575-1
 
 # Build settings
+sass:
+  sass_dir: assets/css
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
