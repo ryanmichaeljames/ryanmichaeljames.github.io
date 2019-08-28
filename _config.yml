@@ -23,7 +23,7 @@ title: ryanjames.dev
 email: 
 description: >- # this means to ignore newlines until "baseurl:"
   A personal blog by Ryan James where he collects his thoughts and learnings on Microsoft Dynamics 365, 
-  PowerApps, Azure, ASP.NET Core or what ever else he's into.
+  PowerApps, Common Data Service, Azure, ASP.NET Core or what ever else he's into.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ryanjames.dev" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: WhinyRyanie
