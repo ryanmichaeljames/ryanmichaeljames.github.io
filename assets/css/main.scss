@@ -3,18 +3,43 @@
 
 @import "bootstrap/bootstrap";
 
+/*
+* Site
+*/
+
 main > .container {
   padding-top: 15px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #8d021f !important;
 }
 
 /*
-* Header
+* Nav
 */
 
 nav.navbar {
   background-color: #ffffff;
   border-bottom: 1px solid #f5f5f5;
 }
+
+nav.navbar a {
+  color: #343a40;
+}
+
+nav.navbar .navbar-brand {
+  font-size: 2rem;
+}
+
+.nav-item.active a {
+  color: #8d021f !important;
+}
+
 
 /*
 * Footer
@@ -103,16 +128,6 @@ nav.navbar {
 .blog-sidebar img.avatar {
   max-height: 200px;
   margin-bottom: 15px;
-}
-
-/*
-* Site
-*/
-
-a:hover,
-a:focus {
-  text-decoration: none;
-  color: #8d021f !important;
 }
 
 // @import "minima";

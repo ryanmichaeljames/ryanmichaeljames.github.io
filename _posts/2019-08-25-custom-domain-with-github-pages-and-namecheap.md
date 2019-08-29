@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom domain with GitHub Pages and Namecheap
-subtitle: 
+title: 🌐 Custom domain with GitHub Pages and Namecheap
+subtitle: Setting up your GitHub Pages site to use your new domian name you bought from Namecheap
 date: 2019-08-25 00:00:00 +1200
 categories: [blog]
 tags: [github pages, custom domain, namecheap]
@@ -13,11 +13,11 @@ So you've setup you own personal [GitHub Pages](https://pages.github.com) site a
 ## Namecheap
 First we will configure the DNS settings for your custom domain through Namecheap's domain control panel.
 
-1. Navigate to your domian list and click **Manage** on the domain you wish to configure.\
+1. Navigate to your domian list and click **Manage** on the domain you wish to configure.
 ![Screenshot of the Namecheap domain list](/assets/images/2019-08-25-custom-domain-with-github-pages-and-namecheap/namecheap-domian-list.png "Namecheap domian list"){:class="img-fluid blog-post-img"}
-2. Click on the **Advanced DNS** tab and Scroll down to **Host Records** section.\
+2. Click on the **Advanced DNS** tab and Scroll down to **Host Records** section.
 ![Screenshot of the Namecheap DNS control panel](/assets/images/2019-08-25-custom-domain-with-github-pages-and-namecheap/namecheap-advanced-dns.png "Namecheap Advanced DNS"){:class="img-fluid blog-post-img"}
-4. Update the CNAME record by setting the **value** to your GitHub Pages repository, in my case it was `ryanmichaeljames.github.io.`, and leave TTL as `Automatic`.\
+4. Update the CNAME record by setting the **value** to your GitHub Pages repository, in my case it was `ryanmichaeljames.github.io.`, and leave TTL as `Automatic`.
 ![Screenshot of the CNAME record](/assets/images/2019-08-25-custom-domain-with-github-pages-and-namecheap/namecheap-cname-record.png "Namecheap CNAME Record"){:class="img-fluid blog-post-img"}
 5. Next we'll add a few A records with the GitHub's [IP addresses](https://help.github.com/en/articles/setting-up-an-apex-domain#configuring-a-records-with-your-dns-provider) and set their TTL to `Automatic`.
 ```
@@ -34,14 +34,14 @@ Next we will configure your GitHub Pages site.
 
 Finally lets configure your GitHub Pages site to use your custom domian and enable SSL.
 
-1. Navigate to your GitHub Pages site's repository and click on the **Settings** tab and scroll down to the GitHub Pages section.\
+1. Navigate to your GitHub Pages site's repository and click on the **Settings** tab and scroll down to the GitHub Pages section.
 ![Screenshot of the GitHub settings tab.](/assets/images/2019-08-25-custom-domain-with-github-pages-and-namecheap/github-pages-settings.png "GitHub Pages Settings"){:class="img-fluid blog-post-img"}
 3. Under **Custom domain** enter your new domian name and click **Save**.
 ![Screenshot of the GitHub Pages custom domain field](/assets/images/2019-08-25-custom-domain-with-github-pages-and-namecheap/github-pages-custom-domian.png "GitHub Pages Custom Domian"){:class="img-fluid blog-post-img"}
 A file named `CNAME` has been added to your repository.
 ![alt text](/assets/images/2019-08-25-custom-domain-with-github-pages-and-namecheap/
 github-pages-cname-file.png "GitHub Pages Custom Domian")
-5. Finally check **Enforce HTTPS** to enable SSL for your site.\
+5. Finally check **Enforce HTTPS** to enable SSL for your site.
 ![Screenshot of the GitHub Pages enforce HTTPs field](/assets/images/2019-08-25-custom-domain-with-github-pages-and-namecheap/github-pages-enforce-https.png "GitHub Pages Custom Domian"){:class="img-fluid blog-post-img"}
 
 
