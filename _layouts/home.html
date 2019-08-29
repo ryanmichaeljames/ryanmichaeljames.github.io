@@ -2,7 +2,23 @@
 layout: default
 ---
 
-<div class="home">
+<div class="row">
+  <div class="col-lg-8 col-md-10 mx-auto">
+    {%- for post in site.posts limit:5 -%}
+    <div class="blog-post-preview">
+      <a href="{{ post.url | relative_url }}">
+        <h2 class="blog-post-title">{{ post.title | escape }}</h2>
+        <h3 class="blog-post-subtitle">{{ post.subtitle | escape }}</h3>
+      </a>
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      <span class="blog-post-meta">{{ post.date | date: date_format }}</span>
+    </div>
+    <hr>
+    {%- endfor -%}
+  </div>
+</div>
+
+<!-- <div class="home">
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
@@ -31,4 +47,4 @@ layout: default
     <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
   {%- endif -%}
 
-</div>
+</div> -->

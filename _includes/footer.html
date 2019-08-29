@@ -5,14 +5,14 @@
         {% capture github_userid%}{{site.github_userid}}{%endcapture%}
         <a href="https://github.com/{{ site.github_username| cgi_escape | escape }}">
           <img src="https://avatars0.githubusercontent.com/u/{{ github_userid | cgi_escape | escape }}?v=4"
-            class="rounded-circle avatar" style="height: 90px;">
+            class="rounded-circle avatar">
         </a>
       </div>
       <div class="col-8 col-md-4">
         {%- include social.html -%}
       </div>
       <div class="col-12 col-md-6">
-        <span class="text-muted">{{- site.description | escape -}}</span>
+        <span>{{- site.description | escape -}}</span>
       </div>
     </div>
   </div>
