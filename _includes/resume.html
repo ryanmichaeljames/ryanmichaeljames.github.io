@@ -1,0 +1,96 @@
+<div class="container resume">
+    <div class="col-lg-10 mx-auto">
+        <hr />
+
+        <h1>Education</h1>
+        {% for item in site.data.resume.experience.education %}
+        <div class="row experience">
+            <div class="col-md-4">
+                <h4>{{ item.name }}</h4>
+                <p class="experience-period">{{ item.period }}</p>
+            </div>
+            <div class="col-md-8">
+                <p>
+                    <strong>{{ item.title }}</strong>
+                    <span class="hidden-phone">{{ item.description }}</span>
+                    <span class="experience-details">
+                        <span class="location"><i class="fas fa-map-marker-alt"></i> {{ item.location }}</span>
+                    </span>
+                </p>
+            </div>
+        </div>
+        {% endfor %}
+        <hr />
+
+        <h1>Work</h1>
+        {% for item in site.data.resume.experience.work %}
+        <div class="row experience">
+            <div class="col-md-4">
+                <h4>{{ item.name }}</h4>
+                <p class="experience-period">{{ item.period }}</p>
+            </div>
+            <div class="col-md-8">
+                <p>
+                    <strong>{{ item.title }}</strong>
+                    <span class="hidden-phone">{{ item.description }}</span>
+                    <span class="experience-details">
+                        <span class="location"><i class="fas fa-map-marker-alt"></i> {{ item.location }}</span>
+                        <span class="seperator">|</span>
+                        <span class="website"><i class="fas fa-link"></i> <a href="{{ item.website }}"
+                                target="_blank">{{ item.website }}</a></span>
+                    </span>
+                </p>
+            </div>
+        </div>
+        {% endfor %}
+
+        <h1>Skills</h1>
+        <div class="abilities">
+            <div class="row">
+                {% for item in site.data.resume.abilities.skills %}
+                <div class="col-md-6">
+                    <div class="row ability">
+                        <div class="col-6 col-sm-6 col-md-6">
+                            <span class="ability-name">{{ item.name }}</span>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-6">
+                            <span class="ability-rating">
+                                <i class="{% if item.rating > 0 %}rating-fill fas{% else %}far{% endif %} fa-star"></i>
+                                <i class="{% if item.rating > 1 %}rating-fill fas{% else %}far{% endif %} fa-star"></i>
+                                <i class="{% if item.rating > 2 %}rating-fill fas{% else %}far{% endif %} fa-star"></i>
+                                <i class="{% if item.rating > 3 %}rating-fill fas{% else %}far{% endif %} fa-star"></i>
+                                <i class="{% if item.rating > 4 %}rating-fill fas{% else %}far{% endif %} fa-star"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <hr />
+
+        <h1>Tools</h1>
+        <div class="abilities">
+            <div class="row">
+                {% for item in site.data.resume.abilities.tools %}
+                <div class="col-md-6">
+                    <div class="row ability">
+                        <div class="col-6 col-sm-6 col-md-6">
+                            <span class="ability-name">{{ item.name }}</span>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-6">
+                            <span class="ability-rating">
+                                <i class="{% if item.rating > 0 %}rating-fill fas{% else %}far{% endif %} fa-star"></i>
+                                <i class="{% if item.rating > 1 %}rating-fill fas{% else %}far{% endif %} fa-star"></i>
+                                <i class="{% if item.rating > 2 %}rating-fill fas{% else %}far{% endif %} fa-star"></i>
+                                <i class="{% if item.rating > 3 %}rating-fill fas{% else %}far{% endif %} fa-star"></i>
+                                <i class="{% if item.rating > 4 %}rating-fill fas{% else %}far{% endif %} fa-star"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

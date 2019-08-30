@@ -15,20 +15,20 @@ experience:
   work:
   - name: Intergen
     period: Sept 2017 - present
-    job_title: Senior Dynamics Developer
+    title: Senior Dynamics Developer
     description: Working as a senior developer on both small and large Dynamics 365,
       CDS and PowerApps projects.
     location: Auckland, New Zealand
     website: https://intergen.co.nz
   - name: Adaptable Consulting
     period: April 2016 - Sept 2017
-    job_title: Dynamics Developer
+    title: Dynamics Developer
     description: Worked as a developer on Dynamics 365 projects.
     location: Auckland, New Zealand
     website: https://adaptable.co.nz
   - name: xPAC Technology
     period: Sept 2012 - April 2016
-    job_title: Dynamics Developer
+    title: Dynamics Developer
     description: Worked as a developer on Dynamics 365 and ASP.Net MVC projects.
     location: Johannesburg, South Africa
     website: http://xpac.co.za

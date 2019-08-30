@@ -9,14 +9,39 @@
 
 main > .container {
   padding-top: 15px;
-  padding-left: 5%;
-  padding-right: 5%;
+  // padding-left: 5%;
+  // padding-right: 5%;
 }
 
 a:hover,
 a:focus {
   text-decoration: none;
   color: #8d021f !important;
+}
+
+.display-4 {
+  font-size: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .display-4 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hidden-phone {
+    display: none;
+  }
+
+  .experience .experience-details > span {
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  .experience .experience-details .seperator {
+    display: none;
+  }
 }
 
 /*
@@ -39,7 +64,6 @@ nav.navbar .navbar-brand {
 .nav-item.active a {
   color: #8d021f !important;
 }
-
 
 /*
 * Footer
@@ -69,20 +93,6 @@ nav.navbar .navbar-brand {
 
 .footer .social a {
   color: #343a40;
-}
-
-/*
-* Home
-*/
-
-.display-4 {
-  font-size: 2.5rem;
-}
-
-@media (min-width: 768px) {
-  .display-4 {
-    font-size: 3rem;
-  }
 }
 
 /*
@@ -130,117 +140,73 @@ nav.navbar .navbar-brand {
   margin-bottom: 15px;
 }
 
-// @import "minima";
+/*
+* About
+*/
 
-// .footer-col-1 {
-//   width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-//   width: calc(20% - (#{$spacing-unit} / 2));
-// }
+.about h1 {
+  color: #8d021f;
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-// .footer-col-2 {
-//   width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-//   width: calc(35% - (#{$spacing-unit} / 2));
-// }
+.about img.avatar {
+  max-height: 200px;
+}
 
-// .footer-col-3 {
-//   width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-//   width: calc(45% - (#{$spacing-unit} / 2));
-// }
+/*
+* Resume
+*/
 
-// .site-footer .avatar {
-//   width: auto;
-//   height: 90px;
-//   border-radius: 50%;
-// }
+.container.resume {
+  margin-bottom: 40px;
+}
 
-// .post img {
-//   padding-top: 15px;
-//   padding-bottom: 15px;
-// }
+.resume h1 {
+  color: #8d021f;
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-// .row {
-//   margin-right: -15px;
-//   margin-left: -15px;
-// }
+.resume hr {
+  margin: 40px 0px;
+  border-color: #727878;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
 
-// .experience {
-//   margin-bottom: 20px;
-// }
+.experience {
+  margin-bottom: 20px;
+}
 
-// .experience-col {
-//   float: left;
-//   margin-bottom: 15px;
-//   padding-left: 15px;
-//   padding-right: 15px;
-// }
+.experience .experience-period {
+  color: #6c757d;
+}
 
-// .experience-col-1 {
-//   width: -webkit-calc(30% - #{$spacing-unit});
-//   width: calc(30% - (#{$spacing-unit}));
-// }
+.experience p > strong {
+  display: block;
+  padding-top: 8px;
+  margin-bottom: 10px;
+}
 
-// .experience-col-2 {
-//   width: -webkit-calc(70% - #{$spacing-unit});
-//   width: calc(70% - #{$spacing-unit});
-// }
+.experience .experience-details {
+  display: block;
+  margin-top: 6px;
+  color: #8d021f;
+}
 
-// .experience p > strong {
-//   display: block;
-//   padding-top: 8px;
-//   margin-bottom: 10px;
-// }
+.experience .experience-details .seperator {
+  color: #6c757d;
+}
 
-// .experience-details {
-//   display: block;
-//   margin-top: 6px;
-// }
+.ability {
+  margin-bottom: 20px;
+}
 
-// .experience .experience-details {
-//   color: #424242 !important;
-// }
+.ability span.ability-rating {
+  color: #6c757d;;
+}
 
-// .ability {
-//   margin-bottom: 20px;
-// }
-
-// .ability-col {
-//   float: left;
-//   margin-bottom: 15px;
-//   padding-left: 15px;
-//   padding-right: 15px;
-// }
-
-// .ability-col-1 {
-//   width: -webkit-calc(50% - #{$spacing-unit});
-//   width: calc(50% - #{$spacing-unit});
-// }
-
-// .ability-name {
-//   display: inline-block;
-//   width: 60%;
-// }
-
-// .ability-rating {
-//   float: right;
-// }
-
-// .ability .ability-rating .fas {
-//   color: #424242;
-// }
-
-// .ability .ability-rating .far {
-//   color: #424242;
-// }
-
-// hr {
-//   margin: 40px 0px;
-//   border-color: #424242;
-//   opacity: 0.2;
-//   filter: alpha(opacity=20);
-// }
-
-// .clearfix::after {
-//   content: "";
-//   clear: both;
-//   display: table;
-// }
+.ability span.ability-rating > i.rating-fill {
+  color: #8d021f;
+}

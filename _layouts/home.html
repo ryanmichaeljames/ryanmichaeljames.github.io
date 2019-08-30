@@ -1,19 +1,20 @@
 ---
 layout: default
 ---
-
-<div class="row">
-  <div class="col-md-12">
-    {%- for post in site.posts limit:5 -%}
-    <div class="blog-post-preview">
-      <a href="{{ post.url | relative_url }}">
-        <h2 class="blog-post-title">{{ post.title | escape }}</h2>
-        <h3 class="blog-post-subtitle">{{ post.subtitle | escape }}</h3>
-      </a>
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      <span class="blog-post-meta">{{ post.date | date: date_format }}</span>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      {%- for post in site.posts limit:5 -%}
+      <div class="blog-post-preview">
+        <a href="{{ post.url | relative_url }}">
+          <h2 class="blog-post-title">{{ post.title | escape }}</h2>
+          <h3 class="blog-post-subtitle">{{ post.subtitle | escape }}</h3>
+        </a>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="blog-post-meta">{{ post.date | date: date_format }}</span>
+      </div>
+      <hr>
+      {%- endfor -%}
     </div>
-    <hr>
-    {%- endfor -%}
   </div>
 </div>

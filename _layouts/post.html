@@ -2,35 +2,37 @@
 layout: default
 ---
 
-<div class="row">
-  <div class="col-md-8 blog-main">
-    <article class="blog-post" itemscope itemtype="http://schema.org/BlogPosting">
-      <header>
-        <h1 class="blog-post-title">{{ page.title | escape }}</h1>
-        <p class="blog-post-meta">
-          <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-            {%- assign date_format = "%b %-d, %Y" -%}
-            {{ page.date | date: date_format }}
-          </time>
-          {%- if page.author -%}
-          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <span class="p-author h-card" itemprop="name">{{ page.author }}</span>
-          </span>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 blog-main">
+      <article class="blog-post" itemscope itemtype="http://schema.org/BlogPosting">
+        <header>
+          <h1 class="blog-post-title">{{ page.title | escape }}</h1>
+          <p class="blog-post-meta">
+            <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+              {%- assign date_format = "%b %-d, %Y" -%}
+              {{ page.date | date: date_format }}
+            </time>
+            {%- if page.author -%}
+            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+              <span class="p-author h-card" itemprop="name">{{ page.author }}</span>
+            </span>
+            {%- endif -%}
+          </p>
+        </header>
+
+        <div class="blog-post-content" itemprop="articleBody">
+          {%- if page.banner_image -%}
+          <img src="{{ page.banner_image }}" class="img-fluid rounded blog-post-banner-img">
           {%- endif -%}
-        </p>
-      </header>
 
-      <div class="blog-post-content" itemprop="articleBody">
-        {%- if page.banner_image -%}
-        <img src="{{ page.banner_image }}" class="img-fluid rounded blog-post-banner-img">
-        {%- endif -%}
+          {{ content }}
+        </div>
 
-        {{ content }}
-      </div>
-
-    </article>
+      </article>
+    </div>
+    <aside class="col-md-4  blog-sidebar">
+      {%- include sidebar.html -%}
+    </aside>
   </div>
-  <aside class="col-md-4  blog-sidebar">
-    {%- include sidebar.html -%}
-  </aside>
 </div>

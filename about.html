@@ -1,0 +1,49 @@
+---
+layout: default
+permalink: /about/
+---
+<!-- 
+My name is Ryan James and I'm a Dynamics developer at [Intergen](https://www.intergen.co.nz/). Being a Dynamics developer means I'm a jack of all trades, and I spend my time building custom D365, PowerApps, Portals and Azure solutions.
+
+I was born in South Africa but I'm current living and working int the land of the long white cloud, New Zealand.
+
+If i'm not building something then either I'm playing [SQUAD](https://joinsquad.com/) or fighting my toddler for the Play Station 4 controller. -->
+
+<div class="container about">
+    <div class="row">
+        <div class="col-lg-10 mx-auto">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    {% capture github_userid%}{{site.github_userid}}{%endcapture%}
+                    <img src="https://avatars0.githubusercontent.com/u/{{ github_userid | cgi_escape | escape }}?v=4"
+                        class="rounded-circle img-fluid mx-auto d-block avatar">
+                </div>
+                <div class="col-md-8">
+                    <h4>About me</h4>
+                    <p>My name is Ryan James and I'm a senior Dynamcis developer with
+                        {{ site.time | date: "%Y" | minus: 2010 }}
+                        years experience. I live in Auckland, New Zealand and work at <a
+                            href="https://intergen.co.nz">Intergen</a>.
+                    </p>
+                    <p class="mb-0">
+                        I spend my time building custom Dynamics 365, Common Data Serivce, PowerApps, Portals and Azure
+                        solutions for both small and large business.
+                    </p>
+                </div>
+                <!-- <div class="col-md-4">
+                    <h4>Details</h4>
+                    <p>
+                        <strong>Name:</strong><br>
+                        {{ site.author }}<br>
+                        <strong>Age:</strong><br>
+                        {{ site.time | date: "%Y" | minus: 1989 }} years<br>
+                        <strong>Location:</strong><br>
+                        Auckland, New Zealand
+                    </p>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+{%- include resume.html -%}
