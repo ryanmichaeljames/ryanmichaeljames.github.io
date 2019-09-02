@@ -1,0 +1,14 @@
+<div class="p-4 mb-3 bg-light rounded ">
+    {% capture github_userid%}{{site.github_userid}}{%endcapture%}
+    <a href="https://github.com/{{ site.github_username| cgi_escape | escape }}">
+        <img src="https://avatars0.githubusercontent.com/u/{{ github_userid | cgi_escape | escape }}?v=4"
+            class="rounded-circle img-fluid mx-auto d-block avatar">
+    </a>
+    <p>My name is Ryan James and I'm a senior Dynamcis developer with
+        {{ site.time | date: "%Y" | minus: 2010 }} years experience. I live in Auckland, New Zealand and work at <a
+            href="https://intergen.co.nz">Intergen</a>.</p>
+    <p class="mb-0">
+        I spend my time building custom Dynamics 365, Common Data Serivce, PowerApps, Portals and Azure solutions for
+        both small and large business.
+    </p>
+</div>
