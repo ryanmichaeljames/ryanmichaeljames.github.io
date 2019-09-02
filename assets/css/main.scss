@@ -45,6 +45,20 @@ a:focus {
 }
 
 /*
+* Typography
+*/
+
+blockquote {
+  color: #6c757d;
+  border-left: 4px solid #f5f5f5;
+  padding-left: 15px;
+  letter-spacing: -1px;
+  font-style: italic;
+}
+
+
+
+/*
 * Nav
 */
 
@@ -60,11 +74,6 @@ nav.navbar a {
 .nav-item.active a {
   color: #8d021f !important;
 }
-
-// .navbar .navbar-toggler {
-//   color: rgba(0,0,0,.5);
-//   border-color: rgba(0,0,0,.1);
-// }
 
 /*
 * Footer
