@@ -32,13 +32,23 @@
             <div class="col-md-8">
                 <p>
                     <strong>{{ item.title }}</strong>
+                    {% if item.description %}
                     <span class="hidden-phone">{{ item.description }}</span>
+                    {% endif %}
+
+                    {% if item.location and item.website %}
                     <span class="experience-details">
+                        {% if item.location %}
                         <span class="location"><i class="fas fa-map-marker-alt"></i> {{ item.location }}</span>
+                        {% endif %}
+
+                        {% if item.website %}
                         <span class="seperator">|</span>
                         <span class="website"><i class="fas fa-link"></i> <a href="{{ item.website }}"
                                 target="_blank">{{ item.website }}</a></span>
+                        {% endif %}
                     </span>
+                    {% endif %}
                 </p>
             </div>
         </div>
