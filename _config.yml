@@ -3,7 +3,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate
 
-# Jekyll sit configuration
+# Jekyll site configuration
 author: Ryan James
 title: ryanjames.dev
 email: 
@@ -13,7 +13,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: # the subpath of your site, e.g. /blog
 url: https://ryanjames.dev # the base hostname & protocol for your site, e.g. http://example.com
 permalink: pretty #/:categories/:year/:month/:day/:title/
-# timezone: Pacific/Auckland
+timezone: Pacific/Auckland
 
 # Social
 twitter_username: WhinyRyanie
