@@ -80,7 +80,6 @@ nav.navbar a {
 */
 
 .footer {
-  padding: 2.5rem 0;
   background-color: #f5f5f5;
   color: #6c757d;
   border-top: 0.05rem solid #e5e5e5;
@@ -94,10 +93,10 @@ nav.navbar a {
 .footer ul.social {
   list-style-type: none;
   padding: 0px;
+  margin: auto;
 }
 
 .footer img.avatar {
-  margin-bottom: 15px;
   height: 90px;
 }
 

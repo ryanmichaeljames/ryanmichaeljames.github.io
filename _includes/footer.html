@@ -1,11 +1,11 @@
 <footer class="footer mt-auto py-3">
   <div class="container">
-    <div class="row">
+    <div class="row align-items-center">
       <div class="col-4 col-md-2">
         {% capture github_userid%}{{site.github_userid}}{%endcapture%}
         <a href="https://github.com/{{ site.github_username| cgi_escape | escape }}">
           <img src="https://avatars0.githubusercontent.com/u/{{ github_userid | cgi_escape | escape }}?v=4"
-            class="rounded-circle avatar">
+            class="rounded-circle avatar mb-3 mb-md-0">
         </a>
       </div>
       <div class="col-8 col-md-4">
