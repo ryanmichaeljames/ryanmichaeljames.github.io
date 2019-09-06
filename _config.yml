@@ -1,27 +1,44 @@
 plugins:
   - jekyll-seo-tag
   - jekyll-paginate
+  - jekyll-sitemap
 
-# Jekyll site configuration
-author: Ryan James
 title: ryanjames.dev
-email: 
 description: >-
   A personal blog by Ryan James where he collects his thoughts and learnings on Microsoft Dynamics 365, 
   PowerApps, Common Data Service, Azure, ASP.NET Core or what ever else he's into.
+url: https://ryanjames.dev
+author: Ryan James
+
+twitter: 
+  username: WhinyRyanie
+  card: summary
+
+facebooK:
+  publisher: ryanmichaeljames
+
+social:
+  name: Ryan James
+  links:
+    - https://twitter.com/WhinyRyanie
+    - https://www.facebook.com/ryanmichaeljames
+    - https://www.linkedin.com/in/ryanmj
+    - https://github.com/ryanmichaeljames
+
+github:
+  username: ryanmichaeljames
+  userid: 16380903
+
+linkedin:
+  username: ryanmj
+
 baseurl: # the subpath of your site, e.g. /blog
-url: https://ryanjames.dev # the base hostname & protocol for your site, e.g. http://example.com
 permalink: /:categories/:title/ #/:categories/:year/:month/:day/:title/
+
 timezone: Pacific/Auckland
-locale: en_NZ
+lang: en_NZ
 
-# Social
-twitter_username: WhinyRyanie
-github_username:  ryanmichaeljames
-github_userid: 16380903
-linkedin_username: ryanmj
-
-# Analytics
+google_site_verification: soYMbME2lXgzvCVpWnsgzOTrObQ7UrvS-biBEJogxCM
 google_analytics: UA-146448575-1
 
 # Build settings
