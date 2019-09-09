@@ -33,7 +33,7 @@ linkedin:
   username: ryanmj
 
 baseurl: # the subpath of your site, e.g. /blog
-permalink: /:categories/:title/ #/:categories/:year/:month/:day/:title/
+permalink: /:categories/:year/:month/:day/:title/
 
 timezone: Pacific/Auckland
 lang: en_NZ

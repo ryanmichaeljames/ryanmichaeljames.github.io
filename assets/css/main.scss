@@ -226,3 +226,43 @@ nav.navbar a {
 .ability span.ability-rating > i.rating-fill {
   color: #8d021f;
 }
+
+/*
+* Tables
+*/
+
+/**
+ * Tables
+ */
+ table {
+  margin-bottom: 30px;
+  width: 100%;
+  text-align: left;
+  // color: lighten($text-color, 18%);
+  border-collapse: collapse;
+  border: 1px solid #e8e8e8;
+  tr {
+    &:nth-child(even) {
+      background-color: #f7f7f7;
+    }
+  }
+  th, td {
+    padding: 10px 15px;
+  }
+  th {
+    background-color: #f0f0f0;
+    border: 1px solid #dedede;
+    border-bottom-color: #c9c9c9;
+  }
+  td {
+    border: 1px solid #e8e8e8;
+  }
+}
+
+/*
+* Disclaimer
+*/
+.disclaimer {
+  font-style: italic;
+  font-size: x-small;
+}

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ⚡ Create a PowerApps trial
+title: Create a PowerApps trial
 subtitle: Creating a PowerApps 3 month tial to use for demos and learning.
 date: 2019-09-03 00:00:00 +1200
 categories: [blog]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 🔒 Generating a SSL certificate for PowerApps Portals
+title: Generating a SSL certificate for PowerApps Portals
 subtitle: Overcoming the gotchas of generating a SSL cetificate setting it up PowerApps Portals and Dynamics 365 Portals.
 date: 2019-08-27 00:00:00 +1200
 categories: [blog]
