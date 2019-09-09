@@ -4,7 +4,7 @@ title: Custom domain with GitHub Pages and Namecheap
 subtitle: Setting up your GitHub Pages site to use your new domian name you bought from Namecheap
 date: 2019-08-25 00:00:00 +1200
 categories: [blog]
-tags: [github pages, custom domain, namecheap]
+tags: [github pages, github, namecheap]
 image: /assets/img/posts/2019-08-25-custom-domain-github-pages-namecheap/banner.png
 ---
 

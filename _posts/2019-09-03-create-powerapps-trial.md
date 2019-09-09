@@ -4,7 +4,7 @@ title: Create a PowerApps trial
 subtitle: Creating a PowerApps 3 month tial to use for demos and learning.
 date: 2019-09-03 00:00:00 +1200
 categories: [blog]
-tags: [powerapps, power platform, trial]
+tags: [powerapps, power platform, dynamics 365, cds]
 image: /assets/img/posts/2019-09-03-create-powerapps-trial/banner.png
 ---
 
