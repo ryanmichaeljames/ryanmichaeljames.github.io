@@ -56,8 +56,6 @@ blockquote {
   font-style: italic;
 }
 
-
-
 /*
 * Nav
 */
@@ -234,7 +232,7 @@ nav.navbar a {
 /**
  * Tables
  */
- table {
+table {
   margin-bottom: 30px;
   width: 100%;
   text-align: left;
@@ -246,7 +244,8 @@ nav.navbar a {
       background-color: #f7f7f7;
     }
   }
-  th, td {
+  th,
+  td {
     padding: 10px 15px;
   }
   th {
@@ -265,4 +264,21 @@ nav.navbar a {
 .disclaimer {
   font-style: italic;
   font-size: x-small;
+}
+
+/*
+* Pagination
+*/
+.pagination .page-item.active .page-link {
+  background-color: #999;
+  border-color: #999;
+  color: #ffffff;
+}
+
+.pagination .page-item.disabled .page-link {
+  color: #999;
+}
+
+.pagination .page-item .page-link {
+  color: #343a40;
 }
