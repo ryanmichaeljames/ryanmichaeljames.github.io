@@ -13,9 +13,11 @@ In the wake of the new [Power Platform request limits and allocations](https://d
 Perhaps we are overreacting...
 
 ## Spoilt
+{:class="anchored"}
 Like spoilt only children we've had very little throttling with regards to API usage. In the past we were limited to 4000 API requests, per user, per organization instance, over a five-minute sliding window. Theoretically, meaning we could make up to 1,152,000 API requests in 24 hours. That is a lot for the average user. But this also means that it can be abused.
 
 ## The new rules
+{:class="anchored"}
 So, what are mom and dad's new rules? There will be a limit to the number of API requests a user can make to the Power Platform in a 24-hour period. This limit will be based on the licence assigned to the user.
 
 User licenses | Number of API requests / 24 hours
@@ -34,6 +36,7 @@ It's worth noting that if a user has multiple plans assigned from different prod
 In Scott Durrow's new [blog post](http://develop1.net/public/post/2019/09/04/how-do-the-powerplatform-api-limits-affect-model-driven-apps) regarding the subject, he does a little experiment and determines that an average user will consume ~10 API requests when opening a Dynamics 365 Unified Client Contact form. (Assuming no customizations have been made that make additional API calls). If the user has a Dynamics 365 Professional license, giving him 10,00 API requests a day, they would have to open ~2 contact records every minute, for eight hours straight before they would hit their limit. This is more than enough for an average user.
 
 ## New ways to play
+{:class="anchored"}
 The new API limits should not have a large impact on the average user. However, we do need to be aware of the new limits when developing Model Driven Apps and try keep API request to a minimum. But shouldn't we have been doing that all along?
 
 There will most definitely be scenarios where a user will exceed their API limit. A capacity add-on will be available to add an additional 10,000 requests per 24 hours to any user. 
@@ -43,4 +46,5 @@ Cash grab? Maybe... but Microsoft's cloud offerings are maturing and LDD (Licens
 Yes, this will prove to be a challenge in certain circumstances, but we enjoy this line of work because we like a challenge and solving new types of problems. Don't forget that!
 
 ## Sharing our toys
+{:class="anchored"}
 The Power Platform is a shared platform, and it was only a matter of time before mom and dad made some new rules to play by to ensure quality of service for everyone on the platform. We collectively use the Power Platform, and having it guarded against malicious and noisy behaviour is probably not a bad thing.

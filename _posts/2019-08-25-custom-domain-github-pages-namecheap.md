@@ -11,6 +11,7 @@ image: /assets/img/posts/2019-08-25-custom-domain-github-pages-namecheap/banner.
 So you've setup you own personal [GitHub Pages](https://pages.github.com) site and bought a custom domain from [Namecheap](https://www.namecheap.com), now what? In this blog post I'll show you how to configure your GitHub Pages site to use your new custom domain in less than 5 minutes.
 
 ## Namecheap
+{:class="anchored"}
 First we will configure the DNS settings for your custom domain through Namecheap's domain control panel.
 
 1. Navigate to your domian list and click **Manage** on the domain you wish to configure.  
@@ -31,6 +32,7 @@ First we will configure the DNS settings for your custom domain through Namechea
 Next we will configure your GitHub Pages site.
 
 ## GitHub
+{:class="anchored"}
 
 Finally lets configure your GitHub Pages site to use your custom domian and enable SSL.
 
@@ -48,6 +50,7 @@ github-pages-cname-file.png "GitHub Pages Custom Domian"){:class="img-fluid blog
 > Don't forget to include `www` in your custom domain name. This will prevent the  `ERR_CERT_COMMON_NAME_INVALID` error when you browse to `www.<domain>.<tld>`.
 
 ## Easy as!
+{:class="anchored"}
 
 Sorted! You should now have both your GitHub Pages site and your DNS setup. All you need to do is test that it works.
 

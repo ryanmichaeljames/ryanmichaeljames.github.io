@@ -15,6 +15,7 @@ It seems that the Dynamics 365 and Common Data Service actions do not implement 
 There is a work around, however.
 
 ## HTTP with Azure AD
+{:class="anchored"}
 Fortunately, we can use the `Invoke an HTTP request` action that is part of the `HTTP with Azure AD` connector. This connector and action are awesome because it allows us to send HTTP requests to Dynamics 365 or Common Data Service without having to worry about the authentication. No Azure App registrations! No bearer tokens!
 
 Add a new action to your Flow or Logic App. Search for `HTTP with Azure AD` and select the `Invoke an HTTP request` action.
@@ -36,6 +37,7 @@ Save your Flow or Logic App and then trigger it. If you inspect the `Invoke an H
 ![Screenshot of successful Invoke an HTTP request action](/assets/img/posts/2019-09-12-retrieving-formatted-values-from-d365-cds-with-microsoft-flow/http-with-azure-ad-4.png "Successful Invoke an HTTP request action"){:class="img-fluid blog-post-img"}
 
 ## Bonus tips
+{:class="anchored"}
 If you need to iterate through the response values you can use `body('Invoke_an_HTTP_request')?['value']` on an `Apply to each` action.
 
 > `Invoke_an_HTTP_request` is the default name of the action we created. If you changed it's name then you will need you will need to change it in the expression too.

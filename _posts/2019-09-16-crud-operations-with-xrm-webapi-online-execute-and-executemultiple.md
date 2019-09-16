@@ -55,5 +55,6 @@ Below are some of code samples for running CRUD operations using the [Xrm.WebApi
 {:class="anchored"}
 <script src="https://gist.github.com/ryanmichaeljames/81ae711d5bd2bd6b812cc68c070299b8.js"></script>
 
-## Sources:
+## Sources
+{:class="anchored"}
 Sample code derived from pending pull request [#626](https://github.com/MicrosoftDocs/powerapps-docs/pull/626).

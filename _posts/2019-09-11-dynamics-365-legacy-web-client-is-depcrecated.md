@@ -13,9 +13,11 @@ Microsoft has announced that as of the 10th of September 2019, the Dynamics 365 
 Along with the legacy web client, Process Dialogs and Task Flows have also been deprecated and will be no longer available from October 2020.
 
 ## Why though?
+{:class="anchored"}
 Because it's better. Plain and simple. Unified interface boasts better mobile support, improve performance, better navigation and productivity enhancements.
 
 ## Where to from here?
+{:class="anchored"}
 In a partner alert, Microsoft has suggested the following timelines to ensure you are ready to switch over to the Unified Interface.
 - **November 2019:** Complete initial tests of the Unified Interface to ensure your teams can evaluate and plan their efforts accordingly.
 - **December 2019:** Ensure that you and your customers are comfortable with the Unified Interface.
@@ -34,5 +36,6 @@ Here are a few resources you can consume to make the transition to Unified Inter
 Transition whitepaper](https://docs.microsoft.com/en-nz/powerapps/maker/model-driven-apps/approaching-unified-interface).
 
 ## Sources
+{:class="anchored"}
 - [Announcement by Charles Lamanna](https://cloudblogs.microsoft.com/dynamics365/bdm/2019/09/10/announcing-the-timeline-to-move-to-unified-interface)  
 - [Important changes (deprecations) coming in Dynamics 365 Customer Engagement](https://docs.microsoft.com/en-nz/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming)

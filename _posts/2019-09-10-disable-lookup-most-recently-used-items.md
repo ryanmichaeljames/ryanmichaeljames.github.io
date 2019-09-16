@@ -13,11 +13,13 @@ Having a lookup suggest the most recent records is a cool little feature, but it
 ![Screenshot of the most recently used items in a lookup.](/assets/img/posts/2019-09-10-disable-lookup-most-recently-used-items/lookup-most-recently-used-items.png "Most recently used items"){:class="img-fluid blog-post-img img-thumbnail "}
 
 ## What can we do about it?
+{:class="anchored"}
 It is possible to disable this feature. Simply navigate to the form editor and open the lookup field's properties dialog. Under the **Field Behaviour** section, check the **Disable most recently used items for this field** option and click **OK**. Save and publish the form.
 
 ![Screenshot of the "Disable most recently used items for this field" option.](/assets/img/posts/2019-09-10-disable-lookup-most-recently-used-items/disable-most-recently-used-items-option.png "Disable most recently used items for this field"){:class="img-fluid blog-post-img img-thumbnail "}
 
 ## Easy as!
+{:class="anchored"}
 
 When setting focus to the lookup you will notice that it no longer suggests the most recently used records.
 

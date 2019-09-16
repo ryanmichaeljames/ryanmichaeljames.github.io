@@ -11,6 +11,7 @@ image: /assets/img/posts/2019-09-03-create-powerapps-trial/banner.png
 So you are looking to try out the new PowerApps features, planning on doing a PowerApps demo or just want to learn what PowerApps is all about? The best place to start is with a free trial without having to link your credit card. In this blog post I'll show you how to signup of a free 3 month PowerApps [Plan 2](https://powerapps.microsoft.com/en-us/pricing/#compare-plans) trial.
 
 ## Office 365 E5 Trial
+{:class="anchored"}
 
  Fist off, you will need to create an Office 365 E5 Trial.
 
@@ -47,6 +48,7 @@ The setup of your Office 365 E5 trial will take a few minutes. Once complete cli
 ![Screenshot of the Office 365 E5 trial signup process.](/assets/img/posts/2019-09-03-create-powerapps-trial/o365-trial-signup-6.png "Office 365 E5 Trial Signup"){:class="img-fluid blog-post-img img-thumbnail"}
 
 ## Office 365 E5 Setup
+{:class="anchored"}
 
 Next you will need to setup the Office 365 E5 trial that was just provisioned in the section above.
 
@@ -63,6 +65,7 @@ You will be redirected to the Microsoft 365 admin center.
 ![Screenshot of the Office 365 setup.](/assets/img/posts/2019-09-03-create-powerapps-trial/o365-trial-setup-3.png "Office 365 Setup"){:class="img-fluid blog-post-img img-thumbnail"}
 
 ## PowerApps Trial
+{:class="anchored"}
 
 The final step will actually involve signing up for the PowerApps trial.
 
@@ -83,6 +86,7 @@ Lastly, click **Continue**.
 ![Screenshot of PowerApps trial signup process.](/assets/img/posts/2019-09-03-create-powerapps-trial/powerapps-trial-signup-4.png "PowerApps Trial Signup"){:class="img-fluid blog-post-img img-thumbnail"}
 
 ## Easy as!
+{:class="anchored"}
 
 You now have an active PowerApps trial!
 

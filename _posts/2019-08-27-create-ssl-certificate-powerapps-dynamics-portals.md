@@ -17,6 +17,7 @@ In order to generate a SSL certificate your certificate authority is going to ne
 > This guide also applies to Dynamics 365 Portals
 
 ### Install IIS
+{:class="anchored"}
 If you don't have IIS installed follow these steps, otherwise skip this section.
 1. Open **Windows Settings** and click on **Apps**.  
 ![Screenshot of Windows Settings](/assets/img/posts/2019-08-27-create-ssl-certificate-powerapps-dynamics-portals/windows-settings.png "Windows Settings"){:class="img-fluid blog-post-img"}
@@ -30,7 +31,8 @@ If you don't have IIS installed follow these steps, otherwise skip this section.
 
 It will take a few moments to install IIS. Once it's complete you are ready to generate a CSR!
 
-### Generate a Certificate Signing Request
+### Generate a Certificate Signing Request {#generate-csr}
+{:class="anchored"}
 1. Open IIS and double click **Server Certificates**.  
 ![Screenshot of the IIS Server Certificates link](/assets/img/posts/2019-08-27-create-ssl-certificate-powerapps-dynamics-portals/iis-server-certificates.png "IIS Server Certificates"){:class="img-fluid blog-post-img"}
 2. From the **Actions** bar on the right, click **Create Certificate Request...**.  
@@ -45,7 +47,8 @@ It will take a few moments to install IIS. Once it's complete you are ready to g
 
 You should now have a CSR that you can submit to your certificate authority. You can validate that the details of the CSR are correct by running `certutil -dump filename.csr` in Command Prompt.
 
-### Complete the Certificate Request
+### Complete the Certificate Request {#complete-csr}
+{:class="anchored"}
 
 Once your certificate authority has provided you with your new certificate, you will need to complete the request and export a PFX certificate file to be uploaded to the PowerApps Portal admin center.
 
@@ -63,7 +66,8 @@ Once your certificate authority has provided you with your new certificate, you 
 > Remember this password. You will need it when uploading your certificate to the PowerApps Portals admin center.
 
 
-### Upload the certificate to PowerApps Portal admin center
+### Upload the certificate to PowerApps Portal admin center {#upload-certificate-to-powerapps}
+{:class="anchored"}
 Almost there! Next we have left to do is upload the `.pfx` file to our portal through the PowerApps Portals admin center.
 
 1. Browse to the PowerApps Portals admin center for your portal and click **Manage SSL certificates**.  
@@ -73,7 +77,8 @@ Almost there! Next we have left to do is upload the `.pfx` file to our portal th
 3. Click the **Upload file** button, select the `.pfx` file we exported earlier, enter the password we created and click **OK**.  
 ![Screenshot of the Upload a Certificate dialog](/assets/img/posts/2019-08-27-create-ssl-certificate-powerapps-dynamics-portals/powerapps-managed-ssl-certificates-upload.png "Upload a Certificate"){:class="img-fluid blog-post-img"}
 
-## Create a SSL Binding
+## Create a SSL Binding {#create-ssl-binding}
+{:class="anchored"}
 Finally! The last section, I promise! We can now create a SSL binding between the certificate and the portal hostname.
 1. From the PowerApps Portals admin center click **Set up custom domians and SSL**.  
 ![Screenshot of PowerApps Portals admin center](/assets/img/posts/2019-08-27-create-ssl-certificate-powerapps-dynamics-portals/powerapps-setup-custom-domains-and-ssl.png "Setup custom domians and SSL"){:class="img-fluid blog-post-img"}
@@ -83,5 +88,6 @@ Finally! The last section, I promise! We can now create a SSL binding between th
 ![Screenshot of the SSL Bindings](/assets/img/posts/2019-08-27-create-ssl-certificate-powerapps-dynamics-portals/powerapps-add-ssl-binding.png "Add SSL Binding"){:class="img-fluid blog-post-img"}
 
 ### Easy as!
+{:class="anchored"}
 
 Sorted! You should now  be able to browse to your PowerApps portal using your custom domian with yournew certificate in place.
