@@ -1,0 +1,3 @@
+$(function () {
+    anchors.add('.anchored');
+  });
