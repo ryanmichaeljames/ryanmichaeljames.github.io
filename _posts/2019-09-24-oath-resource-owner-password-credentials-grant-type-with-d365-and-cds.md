@@ -1,7 +1,7 @@
 ---
 layout: post
 title: OAuth 2.0 Resource Owner Password Credentials grant type with Dynamics 365 and CDS
-subtitle: Getting an OAuth access token with a user credentials, and why you should be careful.
+subtitle: Getting an OAuth access token with user credentials, and why you should be careful.
 date: 2019-09-24 00:00:00 +1200
 categories: [blog]
 tags: [dynamics 365, common data service, oauth 2.0]
