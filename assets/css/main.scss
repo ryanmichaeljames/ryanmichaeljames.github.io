@@ -107,7 +107,7 @@ nav.navbar a {
 */
 
 .blog-post {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .blog-post h2,
@@ -281,4 +281,11 @@ table {
 
 .pagination .page-item .page-link {
   color: #343a40;
+}
+
+/*
+* Disqus thread
+*/
+#disqus_thread {
+  margin-bottom: 2rem;
 }
