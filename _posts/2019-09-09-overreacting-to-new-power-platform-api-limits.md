@@ -6,6 +6,7 @@ date: 2019-09-09 00:00:00 +1200
 categories: [blog]
 tags: [power platform, dynamics 365, powerapps, cds]
 image: /assets/img/posts/2019-09-09-overreacting-to-new-power-platform-api-limits/image.jpg
+comments: true
 ---
 
 In the wake of the new [Power Platform request limits and allocations](https://docs.microsoft.com/en-us/power-platform/admin/api-request-limits-allocations) to take effect in October 2019 there has been a lot of speculation amongst my colleagues and associates, myself included, as to the negative impact this will have on our customers and the projects we are working on.

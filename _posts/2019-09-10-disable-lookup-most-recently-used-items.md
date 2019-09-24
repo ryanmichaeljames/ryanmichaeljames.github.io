@@ -6,6 +6,7 @@ date: 2019-09-10 00:00:00 +1200
 categories: [blog]
 tags: [dynamics 365, powerapps, cds]
 image: /assets/img/posts/2019-09-10-disable-lookup-most-recently-used-items/image.png
+comments: true
 ---
 
 Having a lookup suggest the most recent records is a cool little feature, but it may not always be useful. This feature does not obey any filtered lookup conditions you may have configured. This can result in items being displayed that a user should not be allowed to select. I'm not sure if this is a bug or just an oversight.

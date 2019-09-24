@@ -6,6 +6,7 @@ date: 2019-08-27 00:00:00 +1200
 categories: [blog]
 tags: [powerapps portals, dynamics portals]
 image: /assets/img/posts/2019-08-27-create-ssl-certificate-powerapps-dynamics-portals/banner.png
+comments: true
 ---
 
 In this blog post I'll show you how to generate a CSR (Certificate Signing Request), export a PFX (Personal File Exchange) file and configure PowerApps to use your new SSL certificate.

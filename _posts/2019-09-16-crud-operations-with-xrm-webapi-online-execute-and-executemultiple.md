@@ -6,6 +6,7 @@ date: 2019-09-16 00:00:00 +1200
 categories: [blog]
 tags: [dynamics 365, common data service, client api, xrm.webapi, web api]
 image: /assets/img/posts/2019-09-16-crud-operations-with-xrm-webapi-online-execute-and-executemultiple/image.png
+comments: true
 ---
 
 CRUD (create, read, update, delete) operations using the `Xrm.WebApi.online.execute` and `Xrm.WebApi.online.executeMultiple` methods of the Dynamics 365 Client API, with JavaScript, are not very well documented in the official Microsoft documentation. The [Xrm.WebApi.online.execute (Client API reference)

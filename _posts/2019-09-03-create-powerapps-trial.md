@@ -6,6 +6,7 @@ date: 2019-09-03 00:00:00 +1200
 categories: [blog]
 tags: [powerapps, power platform, dynamics 365, cds]
 image: /assets/img/posts/2019-09-03-create-powerapps-trial/banner.png
+comments: true
 ---
 
 So you are looking to try out the new PowerApps features, planning on doing a PowerApps demo or just want to learn what PowerApps is all about? The best place to start is with a free trial without having to link your credit card. In this blog post I'll show you how to signup of a free 3 month PowerApps [Plan 2](https://powerapps.microsoft.com/en-us/pricing/#compare-plans) trial.

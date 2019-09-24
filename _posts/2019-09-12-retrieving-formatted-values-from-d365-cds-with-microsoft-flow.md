@@ -6,6 +6,7 @@ date: 2019-09-12 00:00:00 +1200
 categories: [blog]
 tags: [dynamics 365, common data service, logic apps, flow]
 image: /assets/img/posts/2019-09-12-retrieving-formatted-values-from-d365-cds-with-microsoft-flow/image.png
+comments: true
 ---
 
 The Dynamics 365 and Common Data Service connectors in Microsoft Flow and Logic Apps do not return formatted values when using the `Get Record` and `List Records` actions. This is a real pain if you need to use formatted values.

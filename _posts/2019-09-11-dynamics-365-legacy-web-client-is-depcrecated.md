@@ -6,6 +6,7 @@ date: 2019-09-11 00:00:00 +1200
 categories: [blog]
 tags: [dynamics 365, model driven app, unified interface]
 image: /assets/img/posts/2019-09-11-dynamics-365-legacy-web-client-is-depcrecated/image.png
+comments: true
 ---
 
 Microsoft has announced that as of the 10th of September 2019, the Dynamics 365 legacy web client is officially deprecated and that we have until the 1st of October 2020 to completely transition over to the Unified Interface. Microsoft will continue to support the legacy web client until the deadline. After that, the legacy web client will no longer be available.
