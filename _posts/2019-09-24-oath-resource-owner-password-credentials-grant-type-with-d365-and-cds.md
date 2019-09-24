@@ -6,6 +6,7 @@ date: 2019-09-24 00:00:00 +1200
 categories: [blog]
 tags: [dynamics 365, common data service, oauth 2.0]
 image: /assets/img/posts/2019-09-24-oath-resource-owner-password-credentials-grant-type-with-d365-and-cds/image.png
+comments: true
 ---
 
 In this post I'll be demonstrating how to obtain an OAuth access token from Dynamics 365 or Common Data Service using the Resource Owner Password Credentials (ROPC) grant type. With this grant type, the client uses impersonation to request an OAuth access token on behalf of a resource owner. In layman terms... Getting an OAuth access token with a username and password.
