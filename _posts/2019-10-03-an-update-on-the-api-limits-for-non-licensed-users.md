@@ -9,7 +9,7 @@ image: /assets/img/posts/2019-10-03-an-update-on-the-api-limits-for-non-licensed
 comments: true
 ---
 
-In in my previous post, [Overreacting to the new Power Platform API limits](/blog/2019/09/09/overreacting-to-new-power-platform-api-limits), I argued that the new Power Platform API limits are justified to maintain quality of service for all of us. My argument still stands.  Microsoft have updated their [Requests limits and allocations](https://docs.microsoft.com/en-us/power-platform/admin/api-request-limits-allocations#non-licensed-usersapplication-usersusers-with-special-free-licensess) documentation to explain how the new licensing and API limit changes affect non-licensed users and it's looking positive.
+In in my previous post, [Overreacting to the new Power Platform API limits](/blog/2019/09/09/overreacting-to-new-power-platform-api-limits){:target="_blank"}, I argued that the new Power Platform API limits are justified to maintain quality of service for all of us. My argument still stands.  Microsoft have updated their [Requests limits and allocations](https://docs.microsoft.com/en-us/power-platform/admin/api-request-limits-allocations#non-licensed-usersapplication-usersusers-with-special-free-licensess) documentation to explain how the new licensing and API limit changes affect non-licensed users and it's looking positive.
 
 ## How do the API limits affect non-licensed users
 {:class="anchored"}
