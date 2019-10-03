@@ -51,6 +51,6 @@ To get the formatted value from one of the values you are iterating over you can
 
 ## Vote for OData annotations to be added to Flow
 
-If you'd like to see OData annotations added to Flow and Logic Apps please consider voting for it on the Flow Ideas section of the Microsoft Flow Community site. [https://powerusers.microsoft.com/t5/Flow-Ideas/Dynamics-365-Header-Include-OData-Annotations/idi-p/126183](https://powerusers.microsoft.com/t5/Flow-Ideas/Dynamics-365-Header-Include-OData-Annotations/idi-p/126183).
+If you'd like to see OData annotations added to Flow and Logic Apps please consider voting for it on the Flow Ideas section of the Microsoft Flow Community site. [https://powerusers.microsoft.com/t5/Flow-Ideas/Dynamics-365-Header-Include-OData-Annotations/idi-p/126183](https://powerusers.microsoft.com/t5/Flow-Ideas/Dynamics-365-Header-Include-OData-Annotations/idi-p/126183){:target="_blank"}.
 
 ![I'm doing my part!](https://media.giphy.com/media/YYfEjWVqZ6NDG/source.gif "I'm doing my part!"){:class="img-fluid blog-post-img"}

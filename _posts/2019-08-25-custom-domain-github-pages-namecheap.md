@@ -9,7 +9,7 @@ image: /assets/img/posts/2019-08-25-custom-domain-github-pages-namecheap/banner.
 comments: true
 ---
 
-So you've setup you own personal [GitHub Pages](https://pages.github.com) site and bought a custom domain from [Namecheap](https://www.namecheap.com), now what? In this blog post I'll show you how to configure your GitHub Pages site to use your new custom domain in less than 5 minutes.
+So you've setup you own personal [GitHub Pages](https://pages.github.com){:target="_blank"} site and bought a custom domain from [Namecheap](https://www.namecheap.com){:target="_blank"}, now what? In this blog post I'll show you how to configure your GitHub Pages site to use your new custom domain in less than 5 minutes.
 
 ## Namecheap
 {:class="anchored"}
@@ -21,7 +21,7 @@ First we will configure the DNS settings for your custom domain through Namechea
 ![Screenshot of the Namecheap DNS control panel](/assets/img/posts/2019-08-25-custom-domain-github-pages-namecheap/namecheap-advanced-dns.png "Namecheap Advanced DNS"){:class="img-fluid blog-post-img"}
 4. Update the CNAME record by setting the **value** to your GitHub Pages repository, in my case it was `ryanmichaeljames.github.io.`, and leave TTL as `Automatic`.  
 ![Screenshot of the CNAME record](/assets/img/posts/2019-08-25-custom-domain-github-pages-namecheap/namecheap-cname-record.png "Namecheap CNAME Record"){:class="img-fluid blog-post-img"}
-5. Next we'll add a few A records with the GitHub's [IP addresses](https://help.github.com/en/articles/setting-up-an-apex-domain#configuring-a-records-with-your-dns-provider) and set their TTL to `Automatic`.  
+5. Next we'll add a few A records with the GitHub's [IP addresses](https://help.github.com/en/articles/setting-up-an-apex-domain#configuring-a-records-with-your-dns-provider){:target="_blank"} and set their TTL to `Automatic`.  
 ```
 185.199.108.153
 185.199.109.153

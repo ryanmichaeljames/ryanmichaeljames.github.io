@@ -9,7 +9,7 @@ image: /assets/img/posts/2019-09-09-overreacting-to-new-power-platform-api-limit
 comments: true
 ---
 
-In the wake of the new [Power Platform request limits and allocations](https://docs.microsoft.com/en-us/power-platform/admin/api-request-limits-allocations) to take effect in October 2019 there has been a lot of speculation amongst my colleagues and associates, myself included, as to the negative impact this will have on our customers and the projects we are working on.
+In the wake of the new [Power Platform request limits and allocations](https://docs.microsoft.com/en-us/power-platform/admin/api-request-limits-allocations){:target="_blank"} to take effect in October 2019 there has been a lot of speculation amongst my colleagues and associates, myself included, as to the negative impact this will have on our customers and the projects we are working on.
 
 Perhaps we are overreacting...
 
@@ -30,11 +30,11 @@ PowerApps per user plan| 5,000
 Microsoft Flow per user plan| 5,000
 Office licenses (that include PowerApps/Microsoft Flow) | 2,000
 
-Source: [https://docs.microsoft.com/en-us/power-platform/admin/api-request-limits-allocations](https://docs.microsoft.com/en-us/power-platform/admin/api-request-limits-allocations)
+Source: [https://docs.microsoft.com/en-us/power-platform/admin/api-request-limits-allocations](https://docs.microsoft.com/en-us/power-platform/admin/api-request-limits-allocations){:target="_blank"}
 
 It's worth noting that if a user has multiple plans assigned from different product lines, then their API limit will be the sum of the requests allocated to each plan, but if a user has multiple licences allocated within the same product line then their API limit will be what is allocated to the base license.
 
-In Scott Durrow's new [blog post](http://develop1.net/public/post/2019/09/04/how-do-the-powerplatform-api-limits-affect-model-driven-apps) regarding the subject, he does a little experiment and determines that an average user will consume ~10 API requests when opening a Dynamics 365 Unified Client Contact form. (Assuming no customizations have been made that make additional API calls). If the user has a Dynamics 365 Professional license, giving him 10,00 API requests a day, they would have to open ~2 contact records every minute, for eight hours straight before they would hit their limit. This is more than enough for an average user.
+In Scott Durrow's new [blog post](http://develop1.net/public/post/2019/09/04/how-do-the-powerplatform-api-limits-affect-model-driven-apps){:target="_blank"} regarding the subject, he does a little experiment and determines that an average user will consume ~10 API requests when opening a Dynamics 365 Unified Client Contact form. (Assuming no customizations have been made that make additional API calls). If the user has a Dynamics 365 Professional license, giving him 10,00 API requests a day, they would have to open ~2 contact records every minute, for eight hours straight before they would hit their limit. This is more than enough for an average user.
 
 ## New ways to play
 {:class="anchored"}

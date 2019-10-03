@@ -27,16 +27,16 @@ In a partner alert, Microsoft has suggested the following timelines to ensure yo
 
 Here are a few resources you can consume to make the transition to Unified Interface smoother:
 
-- [Introduction to Unified Interface on Microsoft Dynamics 365](https://youtu.be/_VPOi_Iq6ko)
-- [Learn more about the Unified Interface](https://docs.microsoft.com/en-nz/powerapps/user/unified-interface).
-- [Unified Interface Community](https://community.dynamics.com/365/unified-interface/).
-- [Unified Interface Playbook](https://docs.microsoft.com/en-nz/powerapps/maker/model-driven-apps/unified-interface-playbook).
-- [Quick start for using an existing environment to validate your legacy web client app with the Unified Interface](https://docs.microsoft.com/en-us/powerapps/maker/model-driven-apps/transition-web-app-existing).
-- [Quick start for transitioning your Dynamics 365 for Customer Engagement apps web client application to Unified Interface](https://docs.microsoft.com/en-us/powerapps/maker/model-driven-apps/transition-web-app).
+- [Introduction to Unified Interface on Microsoft Dynamics 365](https://youtu.be/_VPOi_Iq6ko){:target="_blank"}
+- [Learn more about the Unified Interface](https://docs.microsoft.com/en-nz/powerapps/user/unified-interface){:target="_blank"}
+- [Unified Interface Community](https://community.dynamics.com/365/unified-interface/){:target="_blank"}
+- [Unified Interface Playbook](https://docs.microsoft.com/en-nz/powerapps/maker/model-driven-apps/unified-interface-playbook){:target="_blank"}
+- [Quick start for using an existing environment to validate your legacy web client app with the Unified Interface](https://docs.microsoft.com/en-us/powerapps/maker/model-driven-apps/transition-web-app-existing){:target="_blank"}
+- [Quick start for transitioning your Dynamics 365 for Customer Engagement apps web client application to Unified Interface](https://docs.microsoft.com/en-us/powerapps/maker/model-driven-apps/transition-web-app){:target="_blank"}
 - [Approaching a User Experience & Unified Interface
-Transition whitepaper](https://docs.microsoft.com/en-nz/powerapps/maker/model-driven-apps/approaching-unified-interface).
+Transition whitepaper](https://docs.microsoft.com/en-nz/powerapps/maker/model-driven-apps/approaching-unified-interface){:target="_blank"}
 
 ## Sources
 {:class="anchored"}
-- [Announcement by Charles Lamanna](https://cloudblogs.microsoft.com/dynamics365/bdm/2019/09/10/announcing-the-timeline-to-move-to-unified-interface)  
-- [Important changes (deprecations) coming in Dynamics 365 Customer Engagement](https://docs.microsoft.com/en-nz/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming)
+- [Announcement by Charles Lamanna](https://cloudblogs.microsoft.com/dynamics365/bdm/2019/09/10/announcing-the-timeline-to-move-to-unified-interface){:target="_blank"}
+- [Important changes (deprecations) coming in Dynamics 365 Customer Engagement](https://docs.microsoft.com/en-nz/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming){:target="_blank"}

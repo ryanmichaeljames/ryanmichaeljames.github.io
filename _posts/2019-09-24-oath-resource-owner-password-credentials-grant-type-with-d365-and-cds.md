@@ -21,7 +21,7 @@ I will also briefly explain how ROPC works and why you should be careful when im
 ## Now do it with Postman
 {:class="anchored"}
 
-Open [Postman](https://www.getpostman.com) and create a new `POST` request with `https://login.microsoftonline.com/common/oauth2/token` as the request URL. Under the **Body** tab, select `x-www-form-urlencoded` and add the following key value pairs:
+Open [Postman](https://www.getpostman.com){:target="_blank"} and create a new `POST` request with `https://login.microsoftonline.com/common/oauth2/token` as the request URL. Under the **Body** tab, select `x-www-form-urlencoded` and add the following key value pairs:
 
 Key | Value
 --- | ---
@@ -54,19 +54,19 @@ As per the OAuth 2.0 Authorization Framework spec:
 
 > The resource owner password credentials grant type is suitable in cases where the resource owner has a trust relationship with the client, such as the device operating system or a highly privileged application. The authorization server should take special care when enabling this grant type and only allow it when other flows are not viable.
 >
-> -- <cite>[RFC 6749 The OAuth 2.0 Authorization Framework - Section 4.3](https://tools.ietf.org/html/rfc6749#section-4.3)</cite>
+> -- <cite>[RFC 6749 The OAuth 2.0 Authorization Framework - Section 4.3](https://tools.ietf.org/html/rfc6749#section-4.3){:target="_blank"}</cite>
 
 In other words, the resource owner password credentials grant type should only be used in scenarios when the 3rd party application (client) can be completely trusted with the Dynamics 365 or Common Data Service user's (resource owner) credentials.
 
 > It is also used to migrate existing clients using direct authentication schemes such as HTTP Basic or Digest authentication to OAuth by converting the stored credentials to an access token.
 >
-> -- <cite>[RFC 6749 The OAuth 2.0 Authorization Framework - Section 4.3](https://tools.ietf.org/html/rfc6749#section-4.3)</cite>
+> -- <cite>[RFC 6749 The OAuth 2.0 Authorization Framework - Section 4.3](https://tools.ietf.org/html/rfc6749#section-4.3){:target="_blank"}</cite>
 
 This grant type was introduced to allow legacy applications to easily migrate to OAuth from the old HTTP specification and allowing them to benefit from the advantages of OAuth.
 
 > This grant type carries a higher risk than other grant types because it maintains the password anti-pattern this protocol seeks to avoid. The client could abuse the password, or the password could unintentionally be disclosed to an attacker (e.g., via log files or other records kept by the client).
 >
-> -- <cite>[RFC 6749 The OAuth 2.0 Authorization Framework - Section 10.7](https://tools.ietf.org/html/rfc6749#section-10.7)</cite>
+> -- <cite>[RFC 6749 The OAuth 2.0 Authorization Framework - Section 10.7](https://tools.ietf.org/html/rfc6749#section-10.7){:target="_blank"}</cite>
 
 Becasue the user's credentials are exposed to the client application and they are passed as plain text to the authorization server, you need to be extremely careful with how you store, manage and consume the credentials. If the user credentials are leaked this would not only compromise your Dynamics 365/CDS instances but also Office 365 and Azure.
 

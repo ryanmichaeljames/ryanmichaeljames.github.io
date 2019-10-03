@@ -10,13 +10,13 @@ comments: true
 ---
 
 CRUD (create, read, update, delete) operations using the `Xrm.WebApi.online.execute` and `Xrm.WebApi.online.executeMultiple` methods of the Dynamics 365 Client API, with JavaScript, are not very well documented in the official Microsoft documentation. The [Xrm.WebApi.online.execute (Client API reference)
-](https://docs.microsoft.com/en-us/powerapps/developer/model-driven-apps/clientapi/reference/xrm-webapi/online/execute) documentation has no code samples for CRUD opertations.
+](https://docs.microsoft.com/en-us/powerapps/developer/model-driven-apps/clientapi/reference/xrm-webapi/online/execute){:target="_blank"} documentation has no code samples for CRUD opertations.
 
 So, here are code samples to get you going...
 
 ## CRUD Opertations with Xrm.WebApi.online.execute {#execute}
 {:class="anchored"}
-Below are some code samples for running CRUD operations using the [Xrm.WebApi.online.execute](https://docs.microsoft.com/en-us/powerapps/developer/model-driven-apps/clientapi/reference/xrm-webapi/online/execute) method.
+Below are some code samples for running CRUD operations using the [Xrm.WebApi.online.execute](https://docs.microsoft.com/en-us/powerapps/developer/model-driven-apps/clientapi/reference/xrm-webapi/online/execute){:target="_blank"} method.
 
 ### Create {#execute-create}
 {:class="anchored"}
@@ -37,7 +37,7 @@ Below are some code samples for running CRUD operations using the [Xrm.WebApi.on
 
 ## CRUD Opertations with Xrm.WebApi.online.executeMultiple {#execute-multiple}
 {:class="anchored"}
-Below are some of code samples for running CRUD operations using the [Xrm.WebApi.online.executeMultiple](https://docs.microsoft.com/en-us/powerapps/developer/model-driven-apps/clientapi/reference/xrm-webapi/online/executemultiple) method.
+Below are some of code samples for running CRUD operations using the [Xrm.WebApi.online.executeMultiple](https://docs.microsoft.com/en-us/powerapps/developer/model-driven-apps/clientapi/reference/xrm-webapi/online/executemultiple){:target="_blank"} method.
 > Note: As per the OData v4 specifications, you cannot include read operations as part of a change set. 
 
 ### Create {#execute-multiple-create}
@@ -58,4 +58,4 @@ Below are some of code samples for running CRUD operations using the [Xrm.WebApi
 
 ## Sources
 {:class="anchored"}
-Sample code derived from pending pull request [#626](https://github.com/MicrosoftDocs/powerapps-docs/pull/626).
+Sample code derived from pending pull request [#626](https://github.com/MicrosoftDocs/powerapps-docs/pull/626){:target="_blank"}.

@@ -9,7 +9,7 @@ image: /assets/img/posts/2019-09-03-create-powerapps-trial/banner.png
 comments: true
 ---
 
-So you are looking to try out the new PowerApps features, planning on doing a PowerApps demo or just want to learn what PowerApps is all about? The best place to start is with a free trial without having to link your credit card. In this blog post I'll show you how to signup of a free 3 month PowerApps [Plan 2](https://powerapps.microsoft.com/en-us/pricing/#compare-plans) trial.
+So you are looking to try out the new PowerApps features, planning on doing a PowerApps demo or just want to learn what PowerApps is all about? The best place to start is with a free trial without having to link your credit card. In this blog post I'll show you how to signup of a free 3 month PowerApps [Plan 2](https://powerapps.microsoft.com/en-us/pricing/#compare-plans){:target="_blank"} trial.
 
 ## Office 365 E5 Trial
 {:class="anchored"}
@@ -18,7 +18,7 @@ So you are looking to try out the new PowerApps features, planning on doing a Po
 
 > Log out of all Microsoft accounts before signing up for the trial. This will prevent you from creating a trial on behalf of your organization or personal account when you dont intend to.
 
-Browse to [https://www.microsoft.com/en-nz/microsoft-365/business/compare-more-office-365-for-business-plans](https://www.microsoft.com/en-nz/microsoft-365/business/compare-more-office-365-for-business-plans) and click the **Try for free** link under the Office 365 E5 option.
+Browse to [https://www.microsoft.com/en-nz/microsoft-365/business/compare-more-office-365-for-business-plans](https://www.microsoft.com/en-nz/microsoft-365/business/compare-more-office-365-for-business-plans){:target="_blank"} and click the **Try for free** link under the Office 365 E5 option.
 
 ![Screenshot of the Office 365 E5 plan.](/assets/img/posts/2019-09-03-create-powerapps-trial/o365-plans.png "Office 365 E5"){:class="img-fluid blog-post-img img-thumbnail "}
 
@@ -30,7 +30,7 @@ Enter your details and click **Next**.
 
 ![Screenshot of the Office 365 E5 trial signup process.](/assets/img/posts/2019-09-03-create-powerapps-trial/o365-trial-signup-2.png "Office 365 E5 Trial Signup"){:class="img-fluid blog-post-img img-thumbnail"}
 
-Now you need to provide that you are a [real human being](https://youtu.be/kNdDROtrPcQ) by providing a vaild phone number that can receive a verification code via text message or phone call. Unfortunately web generated phone numbers don't work.
+Now you need to provide that you are a [real human being](https://youtu.be/kNdDROtrPcQ){:target="_blank"} by providing a vaild phone number that can receive a verification code via text message or phone call. Unfortunately web generated phone numbers don't work.
 
 ![Screenshot of the Office 365 E5 trial signup process.](/assets/img/posts/2019-09-03-create-powerapps-trial/o365-trial-signup-3.png "Office 365 E5 Trial Signup"){:class="img-fluid blog-post-img img-thumbnail"}
 
@@ -91,6 +91,6 @@ Lastly, click **Continue**.
 
 You now have an active PowerApps trial!
 
-Your PowerApps trial should be valid for 3 months while the Office 365 E5 trials is only valid for 30 days. If you like to extend the trial by another 30 days you can do so through the [Microsoft 365  admin center](https://portal.office.com/AdminPortal/Home#/subscriptions) via the **Billing** > **Products & services** section. This will require a credit card though.
+Your PowerApps trial should be valid for 3 months while the Office 365 E5 trials is only valid for 30 days. If you like to extend the trial by another 30 days you can do so through the [Microsoft 365  admin center](https://portal.office.com/AdminPortal/Home#/subscriptions){:target="_blank"} via the **Billing** > **Products & services** section. This will require a credit card though.
 
 ![Screenshot of Office 365 trial extension link.](/assets/img/posts/2019-09-03-create-powerapps-trial/extend-trials.png "Extend Trials"){:class="img-fluid blog-post-img img-thumbnail"}
