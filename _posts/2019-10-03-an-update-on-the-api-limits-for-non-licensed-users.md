@@ -32,6 +32,8 @@ If a tenant has multiple subscriptions, their base API request capacity will be 
 
 The base API request capacity can be increased by purchaing PowerApps and Microsoft Flow capacity add-ons.
 
+![Screenshot of PowerApps and Flow capacity add-on subscription](/assets/img/posts/2019-10-03-an-update-on-the-api-limits-for-non-licensed-users/powerapps-flow-capacity-add-on.png "PowerApps and Flow capacity add-on subscription"){:class="img-fluid blog-post-img"}
+
 If the limits are occasionally and resonably exceeded, the users will not be blocked. However, administrators will receive notifications about overages.
 
 The base API request capacity can only be comsumed by non-licensed users.
