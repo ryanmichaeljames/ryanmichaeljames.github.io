@@ -32,6 +32,10 @@ github:
 linkedin:
   username: ryanmj
 
+stackoverflow:
+  username: ryan-james
+  userid: "2501476"
+
 baseurl: # the subpath of your site, e.g. /blog
 permalink: /:categories/:year/:month/:day/:title/
 

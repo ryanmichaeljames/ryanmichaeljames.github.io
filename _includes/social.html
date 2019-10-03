@@ -20,4 +20,11 @@
     </a>
   </li>
   {%- endif -%}
+  {%- if site.linkedin.username -%}
+  <li>
+    <a href="https://stackoverflow.com/users/{{ site.stackoverflow.userid| cgi_escape | escape }}/{{ site.stackoverflow.username| cgi_escape | escape }}">
+      <span><i class="fab fa-stack-overflow"></i> {{ site.stackoverflow.username| escape }}</span>
+    </a>
+  </li>
+  {%- endif -%}
 </ul>
