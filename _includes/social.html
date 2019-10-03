@@ -1,28 +1,28 @@
 <ul class="social">
   {%- if site.github.username -%}
   <li>
-    <a href="https://github.com/{{ site.github.username| cgi_escape | escape }}">
+    <a href="https://github.com/{{ site.github.username| cgi_escape | escape }}" target="_blank">
       <span><i class="fab fa-github"></i> {{ site.github.username| escape }}</span>
     </a>
   </li>
   {%- endif -%}
   {%- if site.twitter.username -%}
   <li>
-    <a href="https://www.twitter.com/{{ site.twitter.username| cgi_escape | escape }}">
+    <a href="https://www.twitter.com/{{ site.twitter.username| cgi_escape | escape }}" target="_blank">
       <span><i class="fab fa-twitter"></i> {{ site.twitter.username| escape }}</span>
     </a>
   </li>
   {%- endif -%}
   {%- if site.linkedin.username -%}
   <li>
-    <a href="https://www.linkedin.com/in/{{ site.linkedin.username| cgi_escape | escape }}">
+    <a href="https://www.linkedin.com/in/{{ site.linkedin.username| cgi_escape | escape }}" target="_blank">
       <span><i class="fab fa-linkedin"></i> {{ site.linkedin.username| escape }}</span>
     </a>
   </li>
   {%- endif -%}
   {%- if site.linkedin.username -%}
   <li>
-    <a href="https://stackoverflow.com/users/{{ site.stackoverflow.userid| cgi_escape | escape }}/{{ site.stackoverflow.username| cgi_escape | escape }}">
+    <a href="https://stackoverflow.com/users/{{ site.stackoverflow.userid| cgi_escape | escape }}/{{ site.stackoverflow.username| cgi_escape | escape }}" target="_blank">
       <span><i class="fab fa-stack-overflow"></i> {{ site.stackoverflow.username| escape }}</span>
     </a>
   </li>
