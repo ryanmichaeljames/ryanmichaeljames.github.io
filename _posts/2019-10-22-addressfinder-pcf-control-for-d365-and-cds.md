@@ -9,7 +9,7 @@ image: /assets/img/posts/2019-10-22-addressfinder-pcf-control-for-d365-and-cds/i
 comments: true
 ---
 
-There are a few community made PCF controls out there that consume the [AddressFinder](https://addressfinder.nz/) API allowing you to search for New Zealand and Australian addresses, but I wasn't happy with any of them. They were either under maintained or didn't offer enough customisation options. So, I created my own.
+There are a few community made PCF controls out there that consume the [AddressFinder](https://addressfinder.nz/) API allowing you to search for New Zealand and Australian addresses, but I wasn't happy with any of them. They were either under maintained or didn't offer enough customisation options. So, I created my own... [PFC AddressFinder Widget](https://github.com/ryanmichaeljames/pcf-addressfinder-widget) 😎
 
 ## PCF AddressFinder Widget
 {:class="anchored"}
@@ -37,5 +37,6 @@ Add your AddressFinder API key to the `API Key` property and configure any addit
 ![Screenshot of control setup](/assets/img/posts/2019-10-22-addressfinder-pcf-control-for-d365-and-cds/control-setup-2.png "Add AddressFinder Widget control"){:class="img-fluid blog-post-img"}
 
 ## README
+{:class="anchored"}
 
 For more details on how to use the PCF AddressFinder Widget control or if you feel like contributing please see the repository's [README](https://github.com/ryanmichaeljames/pcf-addressfinder-widget/blob/master/README.md) on GitHub.
