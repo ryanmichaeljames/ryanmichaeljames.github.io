@@ -21,7 +21,7 @@ Lets quickly build a sample application that uses Entity Framework to consume th
 
 1. [Visual Studio Code](https://code.visualstudio.com)
 2. [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download)
-
+3. [TDS enabled on CDS environment](/blog/2020/05/29/use-sql-to-query-cds/#enabling-the-tds-endpoint)
 
 ### Build
 {:class="anchored"}
