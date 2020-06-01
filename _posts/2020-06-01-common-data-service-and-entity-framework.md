@@ -9,12 +9,12 @@ image: /assets/img/posts/2020-06-01-common-data-service-and-entity-framework/ima
 comments: true
 ---
 
-Now that the Common Data Service allows SQL connections to run queries against the entity tables, I though I might play around with Entity Framework...
+Now that the Common Data Service allows SQL connections to run queries against the entity tables, I thought I might play around with Entity Framework...
 
 ## Sample Console Application
 {:class="anchored"}
 
-Lets quickly build a sample application that uses Entity Framework to consume the CDS TDS endpoint.
+Let's quickly build a sample application that uses Entity Framework to consume the CDS TDS endpoint.
 
 ### Prerequisites
 {:class="anchored"}
@@ -45,9 +45,9 @@ Add the following files to the project.
 
 <script src="https://gist.github.com/ryanmichaeljames/0bcd44b4559b536b48a82cb6690dfe1e.js"></script>
 
-> Dont forget to replace the connection string palceholders in the **appsettings.json** file with your CDS environment details and credentials.
+> Don't forget to replace the connection string placeholders in the **appsettings.json** file with your CDS environment details and credentials.
 
-Add the following `ItemGroup` to `CdsEfSampleApp.csproj` project file to ensure the `appsettings.json` file it always copied to the bin folders.
+Add the following `ItemGroup` to the `CdsEfSampleApp.csproj` project file to ensure the `appsettings.json` file is always copied to the bin folders when the project is built.
 
 ```xml
 <ItemGroup>
@@ -71,12 +71,12 @@ dotnet run
 ### Too lazy to build it yourself?
 {:class="anchored"}
 
-I've created a sample project that is available at [https://github.com/ryanmichaeljames/cds-tds-ef-sample](https://github.com/ryanmichaeljames/cds-tds-ef-sample). The project contains a simple implemetaion of Entity Framework's `DbContext` that is used query the contact table via the TDS endpoint.
+I've created a sample project that is available at [https://github.com/ryanmichaeljames/cds-tds-ef-sample](https://github.com/ryanmichaeljames/cds-tds-ef-sample). The project contains a simple implemetaion of Entity Framework's `DbContext` that is used to query the contact table.
 
 The [README](https://github.com/ryanmichaeljames/cds-tds-ef-sample/edit/master/README.md) details the steps to get a copy of the sample code running on your local machine.
 
 ## Closing Thoughts
 
-Being able to use Entity Framework to query the Common Data Service's entity tables opens up a lot of new possiblities. As a developer with CRM development background this is kind of mind blowing and encourages out of the box thinking.
+Being able to use Entity Framework to query the Common Data Service's entity tables opens up a lot of new possiblities. As a developer with a CRM development background this is kind of mind blowing and encourages out of the box thinking.
 
 ![mind blown](/assets/img/posts/2020-06-01-common-data-service-and-entity-framework/mind-blown.gif "mind blown"){:class="img-fluid blog-post-img"} 
