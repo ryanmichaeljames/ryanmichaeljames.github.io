@@ -15,6 +15,8 @@ It seems that the Dynamics 365 and Common Data Service actions do not implement 
 
 There is a work around, however.
 
+**UPDATE**: This work around is now redundant. Formatted values are available when using the CDS (Current Environment) connector by means of the `new_myfield@OData.Community.Display.V1.FormattedValue` property. Thanks to Linz Zaw Win for pointing this out. See his blog for more details: [https://linnzawwin.blogspot.com/2020/07/get-lookup-display-name-and-option-set.html](https://linnzawwin.blogspot.com/2020/07/get-lookup-display-name-and-option-set.html)
+
 ## HTTP with Azure AD
 {:class="anchored"}
 Fortunately, we can use the `Invoke an HTTP request` action that is part of the `HTTP with Azure AD` connector. This connector and action are awesome because it allows us to send HTTP requests to Dynamics 365 or Common Data Service without having to worry about the authentication. No Azure App registrations! No bearer tokens!
