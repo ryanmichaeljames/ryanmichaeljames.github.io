@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Part 1: Securing ASP.NET 6.0 web API with an Access Control List (Single Client)"
+title: "Part 1: Securing your ASP.NET 6.0 web API with an Access Control List (Single Client)"
 subtitle: Practical ways of securing your ASP.NET Web API with Access Control List
 date: 2022-11-17 00:00:00 +1200
 categories: [blog]
@@ -28,7 +28,7 @@ Both approaches are also suitable if you do not need scopes or roles as part of 
 
 ## Application Registration Setup
 
-We will need to register an Application Registration for the ASP.NET web API that will serve as both the API and the client application. The 
+We will need to register an Application Registration for the ASP.NET web API that will serve as both the API and the client application. 
 
 From the Azure Active Directory blade, create an application registration.
 
