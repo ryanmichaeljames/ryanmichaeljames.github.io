@@ -10,6 +10,12 @@ code {
   }
 }
 
+code.language-plaintext {
+  background-color: rgba(0, 0, 0, .1);
+  padding: 2px 4px;
+  border-radius: 2px;
+}
+
 // User input typically entered via keyboard
 kbd {
   padding: $kbd-padding-y $kbd-padding-x;

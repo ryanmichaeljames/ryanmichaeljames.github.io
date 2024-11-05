@@ -112,7 +112,8 @@ nav.navbar a {
 
 .blog-post h2,
 .blog-post h3,
-.blog-post h4 {
+.blog-post h4,
+.blog-post h5 {
   color: #8d021f;
   margin-top: 40px;
 }
@@ -293,7 +294,7 @@ table {
 /*
 * Highlight
 */
-.highlight pre { 
+.highlight pre {
   padding: .5rem;
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
