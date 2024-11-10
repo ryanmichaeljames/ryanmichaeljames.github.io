@@ -2,7 +2,7 @@
 layout: post
 title: Dataverse Git Integration (Preview) First Look
 subtitle: An overview of the new Dataverse Git integration preview, setup guide, and my thoughts on it.
-date: 2024-11-09 00:00:00 +1200
+date: 2024-11-11 00:00:00 +1200
 categories: [blog]
 tags: [git, dataverse, azure devops]
 image: /assets/img/posts/2024-11-5-microsoft-xrm-data-powershell-cheat-sheet/banner.jpg
