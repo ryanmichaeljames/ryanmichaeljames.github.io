@@ -2,7 +2,7 @@
 layout: post
 title: Microsoft.Xrm.Data.PowerShell Cheat Sheet
 subtitle: A quick reference for Power Platform automation in PowerShell
-date: 2024-11-04 00:00:00 +1200
+date: 2024-11-05 00:00:00 +1200
 categories: [blog]
 tags: [powershell, power platform]
 image: /assets/img/posts/2024-11-5-microsoft-xrm-data-powershell-cheat-sheet/banner.jpg
