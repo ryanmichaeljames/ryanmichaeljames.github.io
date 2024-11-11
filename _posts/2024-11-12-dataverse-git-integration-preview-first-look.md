@@ -2,10 +2,10 @@
 layout: post
 title: Dataverse Git Integration (Preview) First Look
 subtitle: An overview of the new Dataverse Git integration preview, setup guide, and my thoughts on it.
-date: 2024-11-11 00:00:00 +1200
+date: 2024-11-12 00:00:00 +1200
 categories: [blog]
 tags: [git, dataverse, azure devops]
-image: /assets/img/posts/2024-11-5-microsoft-xrm-data-powershell-cheat-sheet/banner.jpg
+image: /assets/img/posts/2024-11-12-dataverse-git-integration-preview-first-look/cover.png
 comments: true
 ---
 
@@ -31,9 +31,9 @@ The following prerequisites are required to use this new feature:
 ### Connect Dataverse to Git
 
 1. Sign in to [Power Apps](https://make.powerapps.com/) and go to **Solutions**.
-2. In the **Solutions** area, click **Connect to Git** on the command bar. ![Click connect to git](\assets\img\posts\2024-11-11-dataverse-git-integration-preview-first-look\setup-git-integration-connect-to-git.png "Click connect to git"){:class="img-fluid blog-post-img"}
-3. Select either **Environment** or **Solution** from the connection type options, select your Azure DevOps organization and project, and set the root Git folder that the solution components will be committed to.![Select solution or environment binding](\assets\img\posts\2024-11-11-dataverse-git-integration-preview-first-look\setup-git-integration-select-solution-or-environemnt-binding.png "Select solution or environment binding"){:class="img-fluid blog-post-img"}
-4. If you selected **Solution** as your connection type, you will need to select the solution you'd like to connect along with the branch. For this example, we'll use `main`. You will also need to provide a subfolder name under the root folder for your solution.![Solution binding](\assets\img\posts\2024-11-11-dataverse-git-integration-preview-first-look\setup-git-integration-solution-binding.png "Solution binding"){:class="img-fluid blog-post-img"}
+2. In the **Solutions** area, click **Connect to Git** on the command bar. ![Click connect to git](\assets\img\posts\2024-11-12-dataverse-git-integration-preview-first-look\setup-git-integration-connect-to-git.png "Click connect to git"){:class="img-fluid blog-post-img"}
+3. Select either **Environment** or **Solution** from the connection type options, select your Azure DevOps organization and project, and set the root Git folder that the solution components will be committed to.![Select solution or environment binding](\assets\img\posts\2024-11-12-dataverse-git-integration-preview-first-look\setup-git-integration-select-solution-or-environemnt-binding.png "Select solution or environment binding"){:class="img-fluid blog-post-img"}
+4. If you selected **Solution** as your connection type, you will need to select the solution you'd like to connect along with the branch. For this example, we'll use `main`. You will also need to provide a subfolder name under the root folder for your solution.![Solution binding](\assets\img\posts\2024-11-12-dataverse-git-integration-preview-first-look\setup-git-integration-solution-binding.png "Solution binding"){:class="img-fluid blog-post-img"}
 
 > **Environment Binding**
 >
@@ -50,15 +50,15 @@ The following prerequisites are required to use this new feature:
 ## How to Commit Changes
 
 1. After making changes or adding components to your unmanaged solution.
-2. Open your solution and click  **Source Control** on the left navigation pane.![Commit changes navigation pane](\assets\img\posts\2024-11-11-dataverse-git-integration-preview-first-look\commit-changes-navigation-pane.png "Commit changes navigation pane"){:class="img-fluid blog-post-img"}
+2. Open your solution and click  **Source Control** on the left navigation pane.![Commit changes navigation pane](\assets\img\posts\2024-11-12-dataverse-git-integration-preview-first-look\commit-changes-navigation-pane.png "Commit changes navigation pane"){:class="img-fluid blog-post-img"}
 3. Click **Commit** to commit your changes to source control and provide a comment for the Git commit.
-4. Open your DevOps repository to review your committed solution files.![Commit changes Git repository](\assets\img\posts\2024-11-11-dataverse-git-integration-preview-first-look\commit-changes-git-repo.png "Commit changes Git repository"){:class="img-fluid blog-post-img"}
+4. Open your DevOps repository to review your committed solution files.![Commit changes Git repository](\assets\img\posts\2024-11-12-dataverse-git-integration-preview-first-look\commit-changes-git-repo.png "Commit changes Git repository"){:class="img-fluid blog-post-img"}
 
 ### How to Pull Changes From Source Control
 
 1. After making some code-first changes to the solution files in your DevOps repository, open your solution and click  **Source Control** on the left navigation pane.
-2. Click **Check for updates** and review your code-first changes.![Check for updates](\assets\img\posts\2024-11-11-dataverse-git-integration-preview-first-look\pull-changes-check-for-updates.png "Check for updates"){:class="img-fluid blog-post-img"}
-3. Click **Pull** to pull your changes into your development environment from source control.![Pull changes](\assets\img\posts\2024-11-11-dataverse-git-integration-preview-first-look\pull-changes.png "Pull changes"){:class="img-fluid blog-post-img"}
+2. Click **Check for updates** and review your code-first changes.![Check for updates](\assets\img\posts\2024-11-12-dataverse-git-integration-preview-first-look\pull-changes-check-for-updates.png "Check for updates"){:class="img-fluid blog-post-img"}
+3. Click **Pull** to pull your changes into your development environment from source control.![Pull changes](\assets\img\posts\2024-11-12-dataverse-git-integration-preview-first-look\pull-changes.png "Pull changes"){:class="img-fluid blog-post-img"}
 
 ## My Thoughts
 
