@@ -37,7 +37,7 @@ The following prerequisites are required to use this new feature:
 
 > **Environment Binding**
 >
-> Environment binding links an entire Dataverse environment, along with all unmanaged solutions and components, to a single repository and folder. It stores all unmanaged customizations in a single Git location, allowing multiple solutions to share a root folder while tracking each component’s association.
+> Environment binding links an entire Dataverse environment, along with all unmanaged solutions and components, to a single repository and folder. It stores all unmanaged customizations in a single Git location, allowing multiple solutions to share a root folder while tracking each component's association.
 >
 > <br />
 > **Solution Binding**
@@ -62,13 +62,13 @@ The following prerequisites are required to use this new feature:
 
 ## My Thoughts
 
-Dataverse’s new Git integration is a much-needed and promising step toward modernizing solution management for Power Platform developers. These features are a highly anticipated addition, filling a long-standing gap in Dataverse’s DevOps capabilities.
+Dataverse's new Git integration is a much-needed and promising step toward modernizing solution management for Power Platform developers. These features are a highly anticipated addition, filling a long-standing gap in Dataverse's DevOps capabilities.
 
 With the introduction of YAML for solution files, Microsoft has enhanced readability and usability, which is a major improvement for developer workflows.
 
 That said, the feature remains in its early stages, with no PAC CLI support and incomplete coverage of all solution components. Hopefully, Microsoft will address these issues in future updates to enhance its functionality and usability.
 
-While there’s room for further development, this release signals a positive direction, and with ongoing updates, it’s likely to become an essential part of a mature DevOps process for Dataverse.
+While there's room for further development, this release signals a positive direction, and with ongoing updates, it's likely to become an essential part of a mature DevOps process for Dataverse.
 
 
 ## Resources
