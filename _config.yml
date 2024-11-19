@@ -43,7 +43,7 @@ timezone: Pacific/Auckland
 lang: en_NZ
 
 google_site_verification: soYMbME2lXgzvCVpWnsgzOTrObQ7UrvS-biBEJogxCM
-google_analytics: UA-146448575-1
+google_tag: G-20SQHGE98B
 
 paginate: 5
 paginate_path: "/blog/page:num/"
