@@ -2,7 +2,7 @@
 layout: post
 title: "Git GUD 1: Understanding Git"
 subtitle: Understanding the basics will make Git feel less like a Dark Souls speed run and more like a tool you can master.
-date: 2024-11-18 00:00:00 +1200
+date: 2024-11-21 00:00:00 +1200
 categories: [blog]
 tags: [git]
 image: /assets/img/posts/2024-11-21-git-gud-1-understanding-git/cover.jpg
