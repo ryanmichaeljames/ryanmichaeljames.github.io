@@ -7,6 +7,9 @@ layout: default
     <div class="col-lg-10 mx-auto">
       <article class="blog-post" itemscope itemtype="http://schema.org/BlogPosting">
         <header>
+          {%- if page.image -%}
+          <img src="{{ page.image }}" class="img-fluid rounded blog-post-banner-img">
+          {%- endif -%}
           <h1 class="blog-post-title">{{ page.title | escape }}</h1>
           <p class="blog-post-meta">
             <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
@@ -22,9 +25,6 @@ layout: default
         </header>
 
         <div class="blog-post-content" itemprop="articleBody">
-          {%- if page.image -%}
-          <img src="{{ page.image }}" class="img-fluid rounded blog-post-banner-img">
-          {%- endif -%}
 
           {{ content }}
 
