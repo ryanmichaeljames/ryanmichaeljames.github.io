@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Tech Priest Tips 1: Easy Power Platform Authentication in Pipelines"
-subtitle: Learn how to perform effortless Power Platform authentication rites
+title: "Tech Priest Tips 1: Power Platform Authentication for Pipelines"
+subtitle: Learn how to perform effortless Power Platform authentication rites for your pipelines.
 date: 2024-12-11 00:00:00 +1200
 categories: [blog]
 tags: [azure devops, power platform, deployment pipeline, authentication]
-image: /assets/img/posts/2024-12-11-tech-priest-tips-1/banner.jpg
+image: /assets/img/posts/2024-12-11-tech-priest-tips-1-power-platform-authentication-for-pipelines/banner.jpg
 comments: true
 ---
 
@@ -39,7 +39,7 @@ This sample pipeline demonstrates how to use Power Platform Build Tools to simpl
 
 > **Cogitator's Note:** See [The Litany of Automation: Consecrating Infrastructure for Deployment]({% post_url 2024-12-09-litany-of-automation-1 %}) for a guide on installing the Power Platform Build Tools extension for Azure DevOps,  creating a service principal, creating a power Platform application user and a Azure DevOps service connection to the Power Platform.
 
-![Azure DevOps pipeline run](\assets\img\posts\2024-12-11-tech-priest-tips-1\azure-devops-pipeline-run.png "Azure DevOps pipeline run"){:class="img-fluid blog-post-img"}
+![Azure DevOps pipeline run](\assets\img\posts\2024-12-11-tech-priest-tips-1-power-platform-authentication-for-pipelines\azure-devops-pipeline-run.png "Azure DevOps pipeline run"){:class="img-fluid blog-post-img"}
 
 ---
 
