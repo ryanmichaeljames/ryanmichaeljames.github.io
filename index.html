@@ -1,4 +1,32 @@
----
-layout: home
-image: /assets/img/avatar.png
----
+<!doctype html>
+<html lang="en-NZ">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ryan James — Technical Lead / DevOps Engineer</title>
+    <meta name="description" content="Technical Lead based in Auckland, NZ. Power Platform, Dataverse, DevOps, and AI-assisted automation." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script>
+      // GitHub Pages SPA routing: restore path from query param set by 404.html
+      (function () {
+        var qs = window.location.search;
+        var match = qs.match(/[?&]p=([^&]*)/);
+        if (match) {
+          var path = decodeURIComponent(match[1]);
+          var hash = qs.match(/[?&]h=([^&]*)/);
+          window.history.replaceState(
+            null, null,
+            path + (hash ? decodeURIComponent(hash[1]) : "")
+          );
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

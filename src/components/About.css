@@ -1,0 +1,19 @@
+.about-content {
+  max-width: 640px;
+}
+
+.about-content p {
+  font-size: 1.05rem;
+  color: var(--grey-800);
+  line-height: 1.75;
+}
+
+.about-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: var(--spacing-md);
+  font-size: 0.875rem;
+  color: var(--grey-400);
+  font-family: var(--font-mono);
+}

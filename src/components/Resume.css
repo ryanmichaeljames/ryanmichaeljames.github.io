@@ -1,0 +1,71 @@
+.resume-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-lg);
+}
+
+.resume-block-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--black);
+  margin-bottom: var(--spacing-sm);
+}
+
+.resume-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.resume-tag {
+  font-size: 0.8rem;
+  font-family: var(--font-mono);
+  color: var(--grey-800);
+  background-color: var(--grey-100);
+  padding: 0.3rem 0.65rem;
+  border-radius: 2px;
+}
+
+.resume-experience {
+  list-style: none;
+}
+
+.resume-experience-item {
+  padding: var(--spacing-sm) 0;
+  border-bottom: 1px solid var(--grey-100);
+}
+
+.resume-experience-item:last-child {
+  border-bottom: none;
+}
+
+.resume-experience-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  margin-bottom: 0.25rem;
+}
+
+.resume-experience-role {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--black);
+}
+
+.resume-experience-company {
+  font-size: 0.85rem;
+  color: var(--grey-600);
+}
+
+.resume-experience-meta {
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  color: var(--grey-400);
+}
+
+@media (max-width: 640px) {
+  .resume-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+}
