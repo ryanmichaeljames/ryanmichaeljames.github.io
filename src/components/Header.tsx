@@ -7,6 +7,7 @@ export default function Header() {
       <div className="container">
         <div className="header-inner">
           <a href="#top" className="header-logo" aria-label="Ryan James — home">
+            ryanjames.dev
           </a>
           <nav className="header-nav" aria-label="Main navigation">
             <a href="#about">About</a>
