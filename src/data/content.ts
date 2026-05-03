@@ -12,6 +12,16 @@ export const profile = {
   },
 };
 
+export const builtLinks = {
+  sectionLabel: "Built",
+  items: [
+    {
+      name: "Police Stats NZ",
+      url: "https://www.ryanjames.dev/police-stats-nz/",
+    },
+  ],
+};
+
 export const resume = {
   specializations: [
     "Microsoft Dataverse",

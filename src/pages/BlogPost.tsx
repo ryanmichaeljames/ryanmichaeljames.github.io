@@ -2,7 +2,7 @@ import { useParams, Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import ReactMarkdown from "react-markdown";
 import { posts } from "../data/posts";
-import { SEO_SITE_URL } from "../App";
+import { SEO_SITE_URL, SEO_SITE_TITLE } from "../App";
 import "./BlogPost.css";
 
 export default function BlogPost() {
@@ -19,19 +19,19 @@ export default function BlogPost() {
   }
 
   const postUrl = `${SEO_SITE_URL}/blog/${post.slug}`;
-  const postTitle = `${post.title} — Ryan James`;
+  const postSeoTitle = `${post.title} — ${SEO_SITE_TITLE}`;
 
   return (
     <article className="post" aria-labelledby="post-title">
       <Helmet>
-        <title>{postTitle}</title>
+        <title>{SEO_SITE_TITLE}</title>
         <meta name="description" content={post.summary} />
         <link rel="canonical" href={postUrl} />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={postUrl} />
-        <meta property="og:title" content={postTitle} />
+        <meta property="og:title" content={postSeoTitle} />
         <meta property="og:description" content={post.summary} />
-        <meta name="twitter:title" content={postTitle} />
+        <meta name="twitter:title" content={postSeoTitle} />
         <meta name="twitter:description" content={post.summary} />
       </Helmet>
 
