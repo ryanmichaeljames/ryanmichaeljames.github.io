@@ -13,7 +13,7 @@ export default function Writing() {
   return (
     <section id="writing" className="section" aria-labelledby="writing-heading">
       <div className="container">
-        <p className="section-label" aria-hidden="true">Writing</p>
+        <p id="writing-heading" className="section-label">Writing</p>
         <ul className="writing-list" role="list">
           {visible.map((post) => (
             <li key={post.slug} className="writing-item">

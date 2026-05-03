@@ -5,7 +5,7 @@ export default function Resume() {
   return (
     <section id="resume" className="section" aria-labelledby="resume-heading">
       <div className="container">
-        <p className="section-label" aria-hidden="true">Resume</p>
+        <p id="resume-heading" className="section-label">Resume</p>
         <div className="resume-grid">
           <div>
             <h2 className="resume-block-title">Specialisations</h2>

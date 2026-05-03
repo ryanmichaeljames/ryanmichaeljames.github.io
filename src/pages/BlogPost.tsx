@@ -1,6 +1,8 @@
 import { useParams, Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import ReactMarkdown from "react-markdown";
 import { posts } from "../data/posts";
+import { SEO_SITE_URL } from "../App";
 import "./BlogPost.css";
 
 export default function BlogPost() {
@@ -16,8 +18,23 @@ export default function BlogPost() {
     );
   }
 
+  const postUrl = `${SEO_SITE_URL}/blog/${post.slug}`;
+  const postTitle = `${post.title} — Ryan James`;
+
   return (
     <article className="post" aria-labelledby="post-title">
+      <Helmet>
+        <title>{postTitle}</title>
+        <meta name="description" content={post.summary} />
+        <link rel="canonical" href={postUrl} />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={postUrl} />
+        <meta property="og:title" content={postTitle} />
+        <meta property="og:description" content={post.summary} />
+        <meta name="twitter:title" content={postTitle} />
+        <meta name="twitter:description" content={post.summary} />
+      </Helmet>
+
       <div className="container">
         <nav className="post-nav" aria-label="Breadcrumb">
           <Link to="/" className="post-back">← Back</Link>

@@ -7,7 +7,7 @@ export default function Projects() {
   return (
     <section id="projects" className="section" aria-labelledby="projects-heading">
       <div className="container">
-        <p className="section-label" aria-hidden="true">Projects</p>
+        <p id="projects-heading" className="section-label">Projects</p>
 
         {loading && (
           <ul className="projects-grid projects-grid--loading" aria-label="Loading repositories" role="list">
