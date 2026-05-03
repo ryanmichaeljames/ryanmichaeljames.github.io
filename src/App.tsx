@@ -4,14 +4,14 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Projects from "./components/Projects";
+import Built from "./components/Built";
 import Resume from "./components/Resume";
-import Writing from "./components/Writing";
 import Footer from "./components/Footer";
 import BlogPost from "./pages/BlogPost";
 import "./App.css";
 
 export const SEO_SITE_URL = "https://www.ryanjames.dev";
-export const SEO_SITE_TITLE = "Ryan James — Technical Lead / DevOps Engineer";
+export const SEO_SITE_TITLE = "Ryan James";
 export const SEO_SITE_DESC =
   "Technical Lead based in Auckland, NZ. 15+ years implementing Dataverse and Power Platform, with a focus on DevOps, ALM, and AI-assisted automation.";
 const SEO_IMAGE = `${SEO_SITE_URL}/og-image.png`;
@@ -32,7 +32,7 @@ function Home() {
       <Hero />
       <About />
       <Projects />
-      <Writing />
+      <Built />
       <Resume />
     </>
   );

@@ -12,7 +12,7 @@ export default function Header() {
           <nav className="header-nav" aria-label="Main navigation">
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
-            <a href="#writing">Writing</a>
+            <a href="#built">Built</a>
             <a href="#resume" className="hide-mobile">Resume</a>
             <a href={profile.links.github} target="_blank" rel="noopener noreferrer">
               GitHub ↗
