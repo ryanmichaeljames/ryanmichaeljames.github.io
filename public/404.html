@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Redirecting...</title>
+  <script>
+    // GitHub Pages SPA redirect
+    // Stores the current URL path in sessionStorage and redirects to root
+    // App.tsx picks it up and routes accordingly via BrowserRouter
+    var l = window.location;
+    l.replace(
+      l.protocol + "//" + l.hostname + (l.port ? ":" + l.port : "") +
+      "/?p=" + encodeURIComponent(l.pathname + l.search) +
+      (l.hash ? "&h=" + encodeURIComponent(l.hash) : "")
+    );
+  </script>
+</head>
+<body></body>
+</html>
