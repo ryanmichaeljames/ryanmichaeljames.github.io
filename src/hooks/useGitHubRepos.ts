@@ -12,7 +12,7 @@ export interface GitHubRepo {
   topics: string[];
 }
 
-const EXCLUDED = new Set(["ryanmichaeljames.github.io"]);
+const EXCLUDED = new Set(["ryanmichaeljames", "ryanmichaeljames.github.io"]);
 
 export function useGitHubRepos(username: string) {
   const [repos, setRepos] = useState<GitHubRepo[]>([]);
