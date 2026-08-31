@@ -1,47 +1,131 @@
 .built-list {
-  display: grid;
-  gap: 1px;
-  border: 1px solid var(--grey-200);
-  background-color: var(--grey-200);
+  margin-top: 44px;
 }
 
 .built-item {
-  background-color: var(--white);
+  border-top: 1px solid var(--border);
+}
+
+.built-item:last-child {
+  border-bottom: 1px solid var(--border);
 }
 
 .built-link {
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: var(--spacing-md);
-  padding: var(--spacing-md);
+  gap: 28px;
+  padding: 26px 20px;
+  background: transparent;
+  transition: background-color var(--dur-base) var(--ease-out);
 }
 
-.built-link:hover {
-  text-decoration: none;
-  background-color: var(--grey-50);
+/* Red rule sweeps the full row width on hover */
+.built-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 1px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform var(--dur-draw) var(--ease-out);
+}
+
+.built-link:hover,
+.built-link:focus-visible {
+  background: var(--surface);
+}
+
+.built-link:hover::after,
+.built-link:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.built-index {
+  flex: none;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.built-body {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  min-width: 0;
 }
 
 .built-name {
-  font-size: 0.95rem;
+  font-size: 20px;
   font-weight: 600;
-  font-family: var(--font-mono);
+  letter-spacing: -0.01em;
+  color: var(--text);
 }
 
 .built-url {
-  font-size: 0.8rem;
-  color: var(--grey-400);
   font-family: var(--font-mono);
-  text-align: right;
+  font-size: 13px;
+  color: var(--text-muted);
+  overflow-wrap: anywhere;
+}
+
+.built-arrow {
+  margin-left: auto;
+  padding-left: var(--space-4);
+  color: var(--accent);
+  font-size: 16px;
+  transition: transform var(--dur-base) var(--ease-out);
+}
+
+.built-link:hover .built-arrow,
+.built-link:focus-visible .built-arrow {
+  transform: translateX(6px);
 }
 
 @media (max-width: 640px) {
+  .built-list {
+    margin-top: 22px;
+  }
+
   .built-link {
+    gap: 16px;
+    padding: 20px 4px;
+  }
+
+  .built-index {
+    font-size: 12px;
+    align-self: center;
+  }
+
+  .built-body {
     flex-direction: column;
     align-items: flex-start;
+    gap: 5px;
+  }
+
+  .built-name {
+    font-size: 18px;
   }
 
   .built-url {
-    text-align: left;
+    font-size: 11px;
+  }
+
+  .built-arrow {
+    font-size: 15px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .built-link::after {
+    transform: scaleX(0);
+  }
+
+  .built-link:hover::after,
+  .built-link:focus-visible::after {
+    transform: scaleX(1);
   }
 }

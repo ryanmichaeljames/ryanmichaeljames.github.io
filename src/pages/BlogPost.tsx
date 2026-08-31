@@ -11,9 +11,16 @@ export default function BlogPost() {
 
   if (!post) {
     return (
-      <div className="post-not-found container">
-        <p>Post not found.</p>
-        <Link to="/">← Back</Link>
+      <div className="post">
+        <div className="container">
+          <div className="post-column">
+            <p className="post-notice-label">404</p>
+            <p className="post-notice">That post does not exist.</p>
+            <Link to="/" className="post-back link-wipe">
+              ← Index
+            </Link>
+          </div>
+        </div>
       </div>
     );
   }
@@ -36,18 +43,28 @@ export default function BlogPost() {
       </Helmet>
 
       <div className="container">
-        <nav className="post-nav" aria-label="Breadcrumb">
-          <Link to="/" className="post-back">← Back</Link>
-        </nav>
+        <div className="post-column">
+          <nav className="post-nav" aria-label="Breadcrumb">
+            <Link to="/" className="post-back link-wipe">
+              ← Index
+            </Link>
+          </nav>
 
-        <header className="post-header">
-          <time className="post-date">{post.date}</time>
-          <h1 id="post-title" className="post-title">{post.title}</h1>
+          <header className="post-header">
+            <h1 id="post-title" className="post-title">
+              {post.title}
+            </h1>
+            <div className="rule-bar post-rule" />
+            <p className="post-meta">
+              <time>{post.date}</time>
+            </p>
+          </header>
+
           <p className="post-summary">{post.summary}</p>
-        </header>
 
-        <div className="post-body">
-          <ReactMarkdown>{post.content}</ReactMarkdown>
+          <div className="post-body">
+            <ReactMarkdown>{post.content}</ReactMarkdown>
+          </div>
         </div>
       </div>
     </article>

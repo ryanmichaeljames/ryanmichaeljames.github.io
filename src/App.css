@@ -1,18 +1,28 @@
-/* Skip link for accessibility */
+/* App shell: skip link, content stacking above the grid overlay. */
+
+.app-content {
+  position: relative;
+  z-index: 1;
+}
+
 .skip-link {
-  position: absolute;
+  position: fixed;
   top: -100%;
   left: 0;
-  padding: 0.75rem 1.5rem;
-  background-color: var(--black);
-  color: var(--white);
-  font-size: 0.875rem;
-  font-weight: 600;
   z-index: 9999;
-  transition: top 0.15s ease;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--surface-raised);
+  border: 1px solid var(--accent);
+  border-radius: 0 0 var(--radius-md) 0;
+  color: var(--text);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: top var(--dur-base) var(--ease-out);
 }
 
 .skip-link:focus {
   top: 0;
-  text-decoration: none;
 }

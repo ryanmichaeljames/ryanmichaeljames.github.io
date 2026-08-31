@@ -48,23 +48,27 @@ export default function App() {
         <meta name="twitter:image" content={SEO_IMAGE} />
         <meta name="author" content="Ryan James" />
         <meta name="robots" content="index, follow" />
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#09090b" />
       </Helmet>
 
       <a href="#main-content" className="skip-link">
         Skip to main content
       </a>
 
-      <Header />
+      <div className="grid-overlay" aria-hidden="true" />
 
-      <main id="main-content">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/blog/:slug" element={<BlogPost />} />
-        </Routes>
-      </main>
+      <div className="app-content">
+        <Header />
 
-      <Footer />
+        <main id="main-content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
+          </Routes>
+        </main>
+
+        <Footer />
+      </div>
     </HelmetProvider>
   );
 }
