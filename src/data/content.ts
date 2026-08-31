@@ -12,6 +12,13 @@ export const profile = {
   },
 };
 
+/**
+ * Repos pinned to the top of the Projects grid, in this order, and tagged
+ * FEATURED. Everything else follows sorted by stars, then recency.
+ * Names must match the GitHub repo name exactly (case-insensitive).
+ */
+export const featuredRepos = ["devops-mcp", "dataverse-mcp", "pipe-dream"];
+
 export const builtLinks = {
   sectionLabel: "Built",
   items: [
@@ -24,14 +31,15 @@ export const builtLinks = {
 
 export const resume = {
   specializations: [
-    "Microsoft Dataverse",
-    "Microsoft Power Platform",
-    "Power Platform DevOps and ALM",
+    "Dataverse",
+    "Power Platform",
+    "ALM",
     "Azure DevOps",
-    "AI-assisted Automation",
-    "MCP Tooling for Dataverse",
+    "AI",
+    "MCP",
     "Azure",
-    "CI/CD Pipelines",
+    "GitHub Copilot",
+    "Tooling",
   ],
   experience: [
     {
@@ -62,19 +70,19 @@ export const resume = {
       role: "Dynamics CRM Developer",
       company: "xPAC Technology",
       period: "Sep 2012 – Apr 2016",
-      location: "Johannesburg, SA",
+      location: "Johannesburg, ZA",
     },
     {
       role: "Dynamics CRM Developer",
       company: "PwC Exordia",
       period: "May 2012 – Aug 2012",
-      location: "Johannesburg, SA",
+      location: "Johannesburg, ZA",
     },
     {
       role: "Dynamics CRM Developer",
       company: "Velocity xRM",
       period: "Jun 2010 – Apr 2012",
-      location: "Johannesburg, SA",
+      location: "Johannesburg, ZA",
     },
   ],
 };

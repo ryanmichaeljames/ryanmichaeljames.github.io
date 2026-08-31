@@ -1,19 +1,46 @@
-.about-content {
-  max-width: 640px;
+.section--about {
+  padding-top: clamp(5.625rem, 7.6vw, 6.875rem); /* 90px → 110px */
 }
 
-.about-content p {
-  font-size: 1.05rem;
-  color: var(--grey-800);
-  line-height: 1.75;
+.about-bio {
+  position: relative;
+  padding-left: 24px;
+  margin-top: 28px;
+  max-width: var(--prose-width);
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  text-wrap: pretty;
 }
 
-.about-meta {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-top: var(--spacing-md);
-  font-size: 0.875rem;
-  color: var(--grey-400);
-  font-family: var(--font-mono);
+/* 3px red rail that draws top → bottom on reveal */
+.about-bio::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--accent);
+  transform: scaleY(0);
+  transform-origin: center top;
+  transition: transform var(--dur-draw) var(--ease-out);
+  transition-delay: 120ms;
+}
+
+.is-revealed .about-bio::before {
+  transform: scaleY(1);
+}
+
+@media (max-width: 640px) {
+  .about-bio {
+    padding-left: 20px;
+    margin-top: 22px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-bio::before {
+    transform: scaleY(1);
+  }
 }

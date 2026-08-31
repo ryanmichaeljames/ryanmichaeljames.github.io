@@ -1,19 +1,67 @@
+/* ==========================================================================
+   ryanjames.dev — dark terminal minimalism
+   Tokens, base, layout primitives, motion system.
+   ========================================================================== */
+
 :root {
-  --black: #0a0a0a;
-  --white: #ffffff;
-  --grey-50: #f8f8f8;
-  --grey-100: #f0f0f0;
-  --grey-200: #e0e0e0;
-  --grey-400: #aaaaaa;
-  --grey-600: #666666;
-  --grey-800: #333333;
-  --max-width: 960px;
-  --spacing-xs: 0.5rem;
-  --spacing-sm: 1rem;
-  --spacing-md: 2rem;
-  --spacing-lg: 4rem;
-  --spacing-xl: 6rem;
-  --font-mono: "JetBrains Mono", "Fira Code", "Courier New", monospace;
+  /* Colour */
+  --bg: #09090b;
+  --bg-grid: #111114;
+  --surface: #0d0d10;
+  --surface-raised: #131317;
+  --border: #1e1e23;
+  --border-strong: #2a2a31;
+  --text: #f5f5f4;
+  --text-secondary: #a1a1a8;
+  --text-muted: #8b8b91;
+  --accent: #e11d2e;
+  --accent-dark: #7f101a;
+  --accent-glow: rgba(225, 29, 46, 0.35);
+  --accent-tint: rgba(225, 29, 46, 0.08);
+  --accent-ring: rgba(225, 29, 46, 0.16);
+
+  /* Type */
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", Consolas, ui-monospace, "Cascadia Mono", monospace;
+
+  /* Layout */
+  --max-width: 1080px;
+  --prose-width: 68ch;
+  --gutter: 24px;
+  --header-h: 64px;
+  --section-space: clamp(5.625rem, 9vw, 8.125rem); /* 90px → 130px */
+
+  /* Spacing scale (4px base) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-24: 96px;
+  --space-32: 128px;
+
+  /* Radii */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 14px;
+  --radius-pill: 999px;
+
+  /* Shadows */
+  --shadow-card: 0 24px 64px rgba(0, 0, 0, 0.55);
+  --shadow-hover: 0 28px 72px rgba(0, 0, 0, 0.6), 0 0 24px -6px var(--accent-glow);
+  --glow-accent: 0 0 0 3px var(--accent-ring), 0 0 18px var(--accent-glow);
+
+  /* Motion */
+  --dur-micro: 120ms;
+  --dur-base: 200ms;
+  --dur-reveal: 320ms;
+  --dur-draw: 500ms;
+  --stagger: 60ms;
+  --ease-out: cubic-bezier(0.2, 0.7, 0.3, 1);
+  --ease-io: cubic-bezier(0.65, 0, 0.35, 1);
 }
 
 *,
@@ -27,13 +75,16 @@
 html {
   font-size: 16px;
   scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-h) + var(--space-6));
+  background-color: var(--bg);
+  color-scheme: dark;
 }
 
 body {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background-color: var(--white);
-  color: var(--black);
-  line-height: 1.6;
+  font-family: var(--font-sans);
+  background-color: var(--bg);
+  color: var(--text-secondary);
+  line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -43,13 +94,12 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-  text-underline-offset: 3px;
+img,
+svg {
+  max-width: 100%;
 }
 
 img {
-  max-width: 100%;
   display: block;
 }
 
@@ -57,38 +107,265 @@ ul {
   list-style: none;
 }
 
-.container {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0 var(--spacing-md);
-}
-
-.section {
-  padding: var(--spacing-xl) 0;
-  border-top: 1px solid var(--grey-200);
-}
-
-.section-label {
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--grey-400);
-  margin-bottom: var(--spacing-md);
-  font-family: var(--font-mono);
-}
-
-h1, h2, h3, h4 {
-  font-weight: 600;
+h1,
+h2,
+h3,
+h4 {
+  color: var(--text);
+  font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.02em;
 }
 
-@media (max-width: 640px) {
-  .container {
-    padding: 0 var(--spacing-sm);
+::selection {
+  background: var(--accent);
+  color: var(--text);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* --------------------------------------------------------------------------
+   Layout primitives
+   -------------------------------------------------------------------------- */
+
+.container {
+  width: min(var(--max-width), 100% - (var(--gutter) * 2));
+  margin-inline: auto;
+}
+
+.section {
+  position: relative;
+  padding-top: var(--section-space);
+}
+
+/* Eyebrow: red 3px square + 13px mono caps */
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.eyebrow::before {
+  content: "";
+  flex: none;
+  width: 3px;
+  height: 3px;
+  background: var(--accent);
+}
+
+.eyebrow--plain::before {
+  display: none;
+}
+
+.section-head-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-6);
+  margin-top: var(--space-4);
+}
+
+.section-heading {
+  font-size: clamp(1.875rem, 4vw, 2.375rem); /* 30px → 38px */
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: 1.1;
+  color: var(--text);
+}
+
+.section-note {
+  flex: none;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+/* Brand signature rule bar — 132 × 7, r4 */
+.rule-bar {
+  width: 132px;
+  height: 7px;
+  border-radius: var(--radius-sm);
+  background: var(--accent);
+  margin-top: 20px;
+}
+
+.chip {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 5px 11px;
+  line-height: 1.4;
+}
+
+/* Red underline that wipes in from the left. Never colours the text itself. */
+.link-wipe {
+  background-image: linear-gradient(var(--accent), var(--accent));
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 0 1px;
+  transition:
+    background-size var(--dur-base) var(--ease-out),
+    color var(--dur-micro) var(--ease-out);
+}
+
+.link-wipe:hover,
+.link-wipe:focus-visible {
+  background-size: 100% 1px;
+  color: var(--text);
+}
+
+/* --------------------------------------------------------------------------
+   Grid overlay — the strongest brand cue
+   -------------------------------------------------------------------------- */
+
+.grid-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(var(--bg-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--bg-grid) 1px, transparent 1px);
+  background-size: 80px 80px;
+  -webkit-mask-image: radial-gradient(1150px 950px at 50% 400px, black 35%, transparent 100%);
+  mask-image: radial-gradient(1150px 950px at 50% 400px, black 35%, transparent 100%);
+}
+
+@keyframes grid-drift {
+  from {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
   }
-  .section {
-    padding: var(--spacing-lg) 0;
+  to {
+    transform: translate3d(0, -40px, 0);
+    opacity: 0.5;
+  }
+}
+
+/* Slow vertical drift over the document scroll. Decoration only: without
+   scroll-timeline support the layer simply sits static. */
+@supports (animation-timeline: scroll()) {
+  .grid-overlay {
+    will-change: transform;
+    animation: grid-drift linear both;
+    animation-timeline: scroll(root block);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Motion primitives
+   Container carries `.reveal` + `.is-revealed` (set by useReveal).
+   Children carry `.reveal-item` and an inline `--i` index for the stagger.
+   NOTE: this is deliberately IntersectionObserver + transition-delay, not
+   `animation-timeline: view()` — scroll timelines ignore animation-delay,
+   so per-item stagger is not expressible there.
+   -------------------------------------------------------------------------- */
+
+.reveal-item {
+  opacity: 0;
+  transform: translateY(12px);
+  transition:
+    opacity var(--dur-reveal) var(--ease-out),
+    transform var(--dur-reveal) var(--ease-out);
+  transition-delay: calc(var(--i, 0) * var(--stagger));
+}
+
+.is-revealed .reveal-item {
+  opacity: 1;
+  transform: none;
+}
+
+/* Rule bars draw left→right when their section reveals. */
+.reveal .rule-bar {
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform var(--dur-draw) var(--ease-out);
+  transition-delay: calc(var(--i, 0) * var(--stagger));
+}
+
+.reveal.is-revealed .rule-bar {
+  transform: scaleX(1);
+}
+
+/* --------------------------------------------------------------------------
+   Responsive
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 640px) {
+  :root {
+    --gutter: 20px;
+    --header-h: 56px;
+  }
+
+  .grid-overlay {
+    background-size: 48px 48px;
+    -webkit-mask-image: radial-gradient(420px 560px at 50% 300px, black 35%, transparent 100%);
+    mask-image: radial-gradient(420px 560px at 50% 300px, black 35%, transparent 100%);
+  }
+
+  .section-head-row {
+    margin-top: 14px;
+  }
+
+  .rule-bar {
+    margin-top: 16px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Reduced motion — everything resolves instantly.
+   Scroll timelines are NOT covered by duration overrides, so they are
+   switched off explicitly.
+   -------------------------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    animation-delay: 0ms !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0ms !important;
+    animation-timeline: none !important;
+  }
+
+  .reveal-item {
+    opacity: 1;
+    transform: none;
+  }
+
+  .reveal .rule-bar {
+    transform: scaleX(1);
+  }
+
+  .grid-overlay {
+    animation: none !important;
+    will-change: auto;
   }
 }

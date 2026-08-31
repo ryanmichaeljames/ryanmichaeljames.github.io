@@ -12,15 +12,34 @@ export interface GitHubRepo {
   topics: string[];
 }
 
-const EXCLUDED = new Set(["ryanmichaeljames", "ryanmichaeljames.github.io"]);
+/** A repo plus the presentation flag derived from the featured list. */
+export interface ProjectRepo extends GitHubRepo {
+  featured: boolean;
+}
 
-export function useGitHubRepos(username: string) {
-  const [repos, setRepos] = useState<GitHubRepo[]>([]);
+const EXCLUDED = new Set(["ryanmichaeljames.github.io", "ryanmichaeljames"]);
+
+/**
+ * Live GitHub fetch. When `featured` is non-empty, only the listed repos are
+ * shown, in the given order; otherwise all public non-fork repos are shown
+ * sorted by stars, then recency.
+ */
+export function useGitHubRepos(username: string, featured: readonly string[] = []) {
+  const [repos, setRepos] = useState<ProjectRepo[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
+  const featuredKey = featured.join(",");
+
   useEffect(() => {
     let cancelled = false;
+
+    const rank = new Map(
+      featuredKey
+        .split(",")
+        .filter(Boolean)
+        .map((name, index) => [name.toLowerCase(), index] as const)
+    );
 
     async function fetchRepos() {
       try {
@@ -33,18 +52,32 @@ export function useGitHubRepos(username: string) {
 
         const data: GitHubRepo[] = await res.json();
 
-        if (!cancelled) {
-          const filtered = data
-            .filter((r) => !r.fork && !EXCLUDED.has(r.name))
-            .sort(
-              (a, b) =>
-                b.stargazers_count - a.stargazers_count ||
-                new Date(b.updated_at).getTime() - new Date(a.updated_at).getTime()
-            );
+        if (cancelled) return;
 
-          setRepos(filtered);
-          setLoading(false);
-        }
+        const ordered = data
+          .filter(
+            (r) =>
+              !r.fork &&
+              !EXCLUDED.has(r.name) &&
+              (rank.size === 0 || rank.has(r.name.toLowerCase()))
+          )
+          .map<ProjectRepo>((r) => ({
+            ...r,
+            topics: r.topics ?? [],
+            featured: rank.has(r.name.toLowerCase()),
+          }))
+          .sort((a, b) => {
+            const aRank = rank.get(a.name.toLowerCase()) ?? Number.MAX_SAFE_INTEGER;
+            const bRank = rank.get(b.name.toLowerCase()) ?? Number.MAX_SAFE_INTEGER;
+            return (
+              aRank - bRank ||
+              b.stargazers_count - a.stargazers_count ||
+              new Date(b.updated_at).getTime() - new Date(a.updated_at).getTime()
+            );
+          });
+
+        setRepos(ordered);
+        setLoading(false);
       } catch (err) {
         if (!cancelled) {
           setError(err instanceof Error ? err.message : "Failed to load repos");
@@ -57,7 +90,7 @@ export function useGitHubRepos(username: string) {
     return () => {
       cancelled = true;
     };
-  }, [username]);
+  }, [username, featuredKey]);
 
   return { repos, loading, error };
 }
